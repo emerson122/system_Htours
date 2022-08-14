@@ -1,0 +1,12 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+node_modules/
+package-lock.json
+.DS_Store
+.vscode
+fresh-bootstrap-table-master
+fresh-bootstrap-table-master.zip
+f.html
+f.php
+male-g59d61eaf0_640.png
+paso.html
+usuario1.png
