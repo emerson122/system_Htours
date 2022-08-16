@@ -431,38 +431,53 @@
 
 
                 <!-- INICIO MODAL PARA NUEVA  -->
-           <div class="modal-container">
-            <div class="modal fade bd-example-modal-lg" id="dialogo1">
-                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-             <div class="modal-dialog modal-sm">
-             <div class="modal-content">
-                  <!-- CABECERA DEL DIALOGO NUEVA-->
-             <div class="modal-header">
-             <h4 class="modal-title">Ingresar  Nueva Clasificacion</h4>
-                  <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
-             </div>
-                  <!-- CUERPO DEL DIALOGO NUEVA -->
-             <div class="modal-body">
-             <center>
-             <form action="" method="post">
-             <label class="form-label">
-             Clasificacion
-             <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
-             </label>
-            
-             
- 
-             <a href="" class="btn btn-secondary">Cancelar</a>
-             <button type="submit" class="btn btn-primary">NUEVO</button>
-             </form>
-             </div> 
-             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-             </center>
-             </div>
-             </div>
-             </div>
-             </div>
-                 <!-- FIN DE MODAL PARA NUEVA  -->
+                <div class="modal-container">
+                  <div class="modal fade bd-example-modal-lg" id="dialogo1">
+                    <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <!-- CABECERA DEL DIALOGO NUEVA-->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Ingresar Nuevo Periodo</h4>
+                          <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                        </div>
+                        <!-- CUERPO DEL DIALOGO NUEVA -->
+                        <div class="modal-body">
+                          <center>
+                            <form action="" method="post">
+                              <label class="form-label">
+                                Nombre del Periodo
+                                <input type='text' list="lista-programacion" name='nombre-periodo' class="form-control" required>
+                                <datalist id="lista-programacion">
+                                  <option value="Periodo-2022-ene-1-004">
+                                </datalist>
+                                </input>
+                              </label>
+                              <label class="form-label">
+                                Fecha inicial
+                                <input type='date' name='fec-inic' class="form-control" required></input>
+                              </label>
+                              <label class="form-label">
+                                Fecha final
+                                <input type='date' name='fec-hast' class="form-control" required></input>
+                              </label>
+                              <br>
+                              <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">Estado <label>
+                              </div>
+                              <br>
+                              <a href="" class="btn btn-secondary">Cancelar</a>
+                              <button type="submit" class="btn btn-primary">NUEVO</button>
+                            </form>
+                        </div>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FIN DE MODAL PARA NUEVA  -->
                 
                 
                 
