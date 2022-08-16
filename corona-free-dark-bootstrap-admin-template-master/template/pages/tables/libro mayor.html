@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Balance General</title>
+    <title>Corona Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -20,9 +20,8 @@
   </head>
   <body>
     <div class="container-scroller">
-      <!-- partial:../../partials/_sidebar.html -->
-      <!-- inicio de todo el menu -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+       <!-- partial:../../partials/_sidebar.html -->
+       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
           <a class="sidebar-brand brand-logo" href="../../index.html"><H3><font color="white"> System H Tours</font></H3></a>
           <a class="sidebar-brand brand-logo-mini" href="../../index.html"><H3><font color="white">SHT</font></H3></a>
@@ -370,216 +369,271 @@
           </div>
         </nav>
         <!-- fin de menu -->
-        
- <!-- INICIO MODAL PARA NUEVA  -->
- <div class="modal-container">
-  <div class="modal fade bd-example-modal-lg" id="dialogo1">
-        <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-   <div class="modal-dialog modal-sm">
-   <div class="modal-content">
-        <!-- CABECERA DEL DIALOGO NUEVA-->
-   <div class="modal-header">
-   <h4 class="modal-title"> <center> Seleccionar Periodo</center></h4>
-        <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
-   </div>
-        <!-- CUERPO DEL DIALOGO NUEVA -->
-   <div class="modal-body">
-   <center>
-   <form action="" method="post">
-   <Label>Seleccionar periodo</Label>
-   <select name="" id="">
-    <option value="" selected></option>
-    <option value="">1-2020-ene-1-001</option>
-    <option value="">1-2021-ene-1-002</option>
-    <option value="">1-2022-ene-1-003</option>
-    </select>
-    <br>
-    <br>
-   <a href="" class="btn btn-secondary">Cancelar</a>
-   <button type="submit" class="btn btn-primary">Aceptar</button>
-   </form>
-   </div> 
-   <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-   </center>
-   </div>
-   </div>
-   </div>
-   </div>
-       <!-- FIN DE MODAL PARA NUEVA  -->
-
-
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <center> <h1>Balance General H Tours Honduras</h1> </center>
-            <h5>________________________________________________________________________________________________________________</h5>
-            <!-- <ul class="nav nav-pills nav-stacked">
-              <li class="active"><a href="#"></a></li>
-            </ul> -->
-            <center> <h1>Periodo</h1>
-              
-              <h1 id="nombre-periodo">1-2021-ene-1-001</h1> </center>
-              <!-- <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#"></a></li>
-              </ul> -->
-              
-              
-              <center>
-                <br>
-                <h3>Desde: <input  type="date"  aria-label="Disabled input example" value="2021-01-01"  readonly >  Hasta: <input type="date" value="2021-12-01" readonly></h3>
-              </center>
-              <p align="right" valign="baseline">
-                <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">Periodo</button>
-              </p>
-            <ul class="nav nav-pills nav-stacked">
-              <li class="active"><a href="#"></a></li>
-              </ul>
+            <!--<center> <h1>Libro Diario</h1> </center>-->
+            <center><h1>Libro Mayor</h1> </center>
             <div class="page-header">
+             <!--<center><h1> Libro Diario </h1></center>--> 
+             
+              <!-- <h1 class="page-title"> Nombre de la Tabla </h1> -->
+              <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Basic tables</li>
+                </ol>
+              </nav> -->
+
+
               
+                  <!-- INICIO MODAL PARA NUEVA  -->
+           <div class="modal-container">
+           <div class="modal fade bd-example-modal-lg" id="dialogo1">
+                 <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+            <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                 <!-- CABECERA DEL DIALOGO NUEVA-->
+            <div class="modal-header">
+            <h4 class="modal-title">Ingresar a Libro Mayor</h4>
+                 <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
             </div>
+                 <!-- CUERPO DEL DIALOGO NUEVA -->
+            <div class="modal-body">
+            <center>
+            <form action="" method="post">
+            <label class="form-label">
+            Clasificacion
+            <input type='text' name='Clasificacion' class="form-control" required></input> 
+            </label>
+            <label class="form-label">
+            Numero de Cuenta
+            <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
+            </label>
+            <label class="form-label">
+            Nombre de Cuenta
+            <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+            </label>
+            <label class="form-label">
+            Saldo
+            <input type='number' name='saldo' class="form-control"  required></input> 
+            </label>
+            <label class="form-label">
+            Fecha
+            <input type='number' name='fecha' class="form-control"  required></input> 
+            </label>
+
+        
+
+            <a href="" class="btn btn-secondary">Cancelar</a>
+            <button type="submit" class="btn btn-primary">Registrar </button>
+            </form>
+            </div> 
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </center>
+            </div>
+            </div>
+            </div>
+            </div>
+                <!-- FIN DE MODAL PARA NUEVA  -->
+
+
+
+            
+              
+                  <!-- INICIO MODAL PARA EDITAR  -->
+           <div class="modal-container">
+            <div class="modal fade bd-example-modal-lg" id="dialogo2">
+                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+             <div class="modal-dialog modal-sm">
+             <div class="modal-content">
+                  <!-- CABECERA DEL DIALOGO EDITAR -->
+             <div class="modal-header">
+             <h4 class="modal-title">Editar Libro Mayor</h4>
+                  <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+             </div>
+                  <!-- CUERPO DEL DIALOGO EDITAR -->
+             <div class="modal-body">
+             <center>
+             <form action="" method="post">
+             <label class="form-label">
+             Numero de Sub Cuenta
+             <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
+             </label>
+             <label class="form-label">
+             Nombre Sub Cuenta
+             <input type='text' name='UNIDADES' class="form-control" required></input> 
+             </label>
+             <label class="form-label">
+             Saldo
+             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
+             </label>
+             <label class="form-label">
+             Fecha
+             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
+             </label>
+         
+ 
+             <a href="" class="btn btn-secondary">Cancelar</a>
+             <button type="submit" class="btn btn-primary">Registrar </button>
+             </form>
+             </div> 
+             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+             </center>
+             </div>
+             </div>
+             </div>
+             </div>
+                 <!-- FIN DE MODAL PARA EDITAR  -->
+
+             
+
+
+            
+              
+                  <!-- INICIO MODAL PARA BORRAR  -->
+           <div class="modal-container">
+            <div class="modal fade bd-example-modal-lg" id="dialogo3">
+                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+             <div class="modal-dialog modal-sm">
+             <div class="modal-content">
+                  <!-- CABECERA DEL DIALOGO EDITAR -->
+             <div class="modal-header">
+             <h4 class="modal-title">Eliminar Libro Mayor</h4>
+                  <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+             </div>
+                  <!-- CUERPO DEL DIALOGO BORRAR -->
+             <div class="modal-body">
+             <center>
+             <form action="" method="post">
+             <label class="form-label">
+             ¿ Desea Eliminar la Transaccion ?
+              
+             </label>
+             
+         
+ 
+             <a href="" class="btn btn btn-primary">SI</a>
+             <a href="" class="btn btn-secondary">NO</a>
+             
+             </form>
+             </div> 
+             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+             </center>
+             </div>
+             </div>
+             </div>
+             </div>
+                 <!-- FIN DE MODAL PARA BORRAR  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <p align="right" valign="baseline">
+              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button>
+            </p>
             <div class="row">
-              <div class="col-lg-6 grid-margin stretch-card">
+          
+              <div class="col-lg-12 stretch-card">
                 <div class="card">
-                  <div class="card-body ">
-                    <center><h4 class="card-title">Activos</h4></center>
-                    <!-- <p class="card-description"> Add class <code>.table</code> -->
-                    </p>
+                  <div class="card-body">
+                    <!--<h4 class="card-title">Table with contextual classes</h4>-->
+                    <!--<p class="card-description"> Add class <code>.table-{color}</code>
+                    </p>-->
                     <div class="table-responsive">
-                      <table class="table table-bordered table-contextual">
+                      <table class="table table-bordered table-contextual"  >
                         <thead>
-                           <tr class="text-dark bg-white">
-                            <th class="text-dark bg-white">Libro Mayor</th>
-                            <th class="text-dark bg-white">Cuenta</th>
-                            <th class="text-dark bg-white">Total</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                           <tr class="text-white bg-dark">
-                            <td>1</td>
-                            <td>Bancos</td>
-                            <td>5000</td>
+                          <tr>
+                            <th class="text-dark bg-white"> # </th>
+                            <th class="text-dark bg-white"> Clasifiacion </th>
+                            <th class="text-dark bg-white"> Numero de Cuenta </th>
+                            <th class="text-dark bg-white"> Nombre Cuenta </th>
+                            <th class="text-dark bg-white"> Saldo Debe </th>
+                            <th class="text-dark bg-white"> Saldo Haber </th>
+                            <th class="text-dark bg-white"> Fecha </th>
+                            <th class="text-dark bg-white"> Acciones </th>
+                            
+
+
                             
                           </tr>
-                           <tr class="text-white bg-dark">
-                            <td>2</td>
-                            <td>Caja</td>
-                            <td>6000</td>
-                            
-                          </tr>
-                           <tr class="text-white bg-dark">
-                            <td>3</td>
-                            <td>Efectivo</td>
-                            <td>7000</td>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <center><h4 class="card-title">Pasivos</h4></center>
-                    <!-- <p class="card-description"> Add class <code>.table-hover</code> -->
-                    </p>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-contextual">
-                        <thead>
-                          <tr class="text-dark bg-white">
-                            <th class="text-dark bg-white">Libro Mayor</th>
-                            <th class="text-dark bg-white">Cuentas</th>
-                             <th class="text-dark bg-white">Total</th>
-                          </tr>
                         </thead>
                         <tbody>
                           <tr class="text-white bg-dark">
-                            <td>4</td>
-                            <td>Proveedores</td>
-                            <td>1000</td>
+                            <td> 1 </td>
+                            <td> 1.Activo </td>
+                            <td> 1.1 </td>
+                            <td> Caja </td>
+                            <td>  </td>
+                            <td> 2500.00 </td>
+                            <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
-                            <td>5</td>
-                            <td>Documentos por pagar</td>
-                            <td>3000</td>
+                            <td> 2 </td>
+                            <td> 1.Activo </td>
+                            <td> 1.2 </td>
+                            <td> Banco </td>
+                            <td>  </td>
+                            <td> 3000.00 </td>
+                            <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
-                            <td>6</td>
-                            <td>Prestamos Bancarios</td>
-                            <td>3000</td>
+                            <td> 3 </td>
+                            <td> 1.Activo </td>
+                            <td> 1.3 </td>
+                            <td> Inversiones temporales </td>
+                            <td>  </td>
+                            <td> 500.00 </td>
+                            <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
+                          </tr>
+                          <tr class="text-white bg-dark">
+                            <td> 4 </td>
+                            <td> 2.Pasivo </td>
+                            <td> 2.1 </td>
+                            <td> Proveedores </td>
+                            <td> 2500.00 </td>
+                            <td>  </td>
+                            <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
+                          </tr>
+                          <tr class="text-white bg-dark">
+                            <td> 5 </td>
+                            <td> 1.Patrimonio </td>
+                            <td> 3.1 </td>
+                            <td> capital social </td>
+                            <td>  </td>
+                            <td> 15000.00 </td>
+                            <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
+                          </tr>
                         </tbody>
                       </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <center><h4 class="card-title">Patrimonio</h4></center>
-                    <!-- <p class="card-description"> Add class <code>.table-striped</code> -->
-                    </p>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-contextual">
-                        <thead>
-                          <tr class="text-dark bg-white">
-                            <th class="text-dark bg-white">Libro Mayor</th>
-                            <th class="text-dark bg-white">Cuentas</th>
-                             <th class="text-dark bg-white">Total</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="text-white bg-dark">
-                            <td>7</td>
-                            <td>Capital</td>
-                            <td>3000</td>
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td>8</td>
-                            <td>Reserva Legal</td>
-                            <td>3000</td>
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td>9</td>
-                            <td>Otras Reservas</td>
-                            <td>7000</td>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <center><h4 class="card-title">Saldos Balance</h4></center>
-                    <!-- <p class="card-description"> Add class <code>.table-striped</code> -->
-                    </p>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-contextual">
-                        <thead>
-                          <tr class="text-dark bg-white">
-                            <th class="text-dark bg-white">#</th>
-                            <th class="text-dark bg-white">Periodo</th>
-                             <th class="text-dark bg-white">Fecha</th>
-                             <th class="text-dark bg-white">Total Activo</th>
-                             <th class="text-dark bg-white">Total Pasivo + Patrimonio</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="text-white bg-dark">
-                            <td>1</td>
-                            <td>1-2021-ene-1-001</td>
-                            <td>31/12/2021</td>
-                            <td>18,000</td>
-                            <td>18,000</td>
-                          </tr>
-                      </table>
+
+                      
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
