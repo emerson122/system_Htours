@@ -373,7 +373,7 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <!--<center> <h1>Libro Diario</h1> </center>-->
-            <center><h1>Libro Diario</h1> </center>
+            <center><h1>Estado Sub Cuentas</h1> </center>
             <div class="page-header">
              <!--<center><h1> Libro Diario </h1></center>--> 
              
@@ -387,7 +387,7 @@
 
 
               
-                  <!-- INICIO MODAL PARA NUEVA  -->
+                  <!-- INICIO MODAL PARA INGRESADA  -->
            <div class="modal-container">
            <div class="modal fade bd-example-modal-lg" id="dialogo1">
                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
@@ -395,33 +395,38 @@
             <div class="modal-content">
                  <!-- CABECERA DEL DIALOGO NUEVA-->
             <div class="modal-header">
-            <h4 class="modal-title">Ingresar a Libro Diario</h4>
+            <h4 class="modal-title">Estado de la Sub Cuenta</h4>
                  <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
             </div>
-                 <!-- CUERPO DEL DIALOGO NUEVA -->
+                 <!-- CUERPO DEL DIALOGO INGRESADA -->
             <div class="modal-body">
             <center>
             <form action="" method="post">
             <label class="form-label">
-            Numero de Sub Cuenta
-            <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
+            Esta Sub cuenta ha sido ingresada en el libro diario
+            <!--<input type='text' name='Clasificacion' class="form-control" required></input>--> 
+            </label>
+            <!--<label class="form-label">
+            Numero de Cuenta
+            <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
             </label>
             <label class="form-label">
-            Nombre Sub Cuenta
-            <input type='text' name='UNIDADES' class="form-control" required></input> 
+            Nombre de Cuenta
+            <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
             </label>
             <label class="form-label">
             Saldo
-            <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
+            <input type='number' name='saldo' class="form-control"  required></input> 
             </label>
             <label class="form-label">
             Fecha
-            <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
-            </label>
+            <input type='number' name='fecha' class="form-control"  required></input> 
+            </label>-->
+
         
 
-            <a href="" class="btn btn-secondary">Cancelar</a>
-            <button type="submit" class="btn btn-primary">Registrar </button>
+            <!--<a href="" class="btn btn-secondary">Cancelar</a>
+            <button type="submit" class="btn btn-primary">Registrar </button>-->
             </form>
             </div> 
             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
@@ -430,97 +435,129 @@
             </div>
             </div>
             </div>
-                <!-- FIN DE MODAL PARA NUEVA  -->
+                <!-- FIN DE MODAL PARA INGRESADA  -->
 
 
 
             
-              
-                  <!-- INICIO MODAL PARA EDITAR  -->
+
+
+
+
+
+
+
+
+
+                
+                  <!-- INICIO MODAL PARA PENDIENTE  -->
            <div class="modal-container">
             <div class="modal fade bd-example-modal-lg" id="dialogo2">
                   <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
              <div class="modal-dialog modal-sm">
              <div class="modal-content">
-                  <!-- CABECERA DEL DIALOGO EDITAR -->
+                  <!-- CABECERA DEL DIALOGO PENDIENTE-->
              <div class="modal-header">
-             <h4 class="modal-title">Editar Libro Diario</h4>
+             <h4 class="modal-title">Estado de la Sub Cuenta</h4>
                   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
              </div>
-                  <!-- CUERPO DEL DIALOGO EDITAR -->
-             <div class="modal-body">
-             <center>
-             <form action="" method="post">
-             <label class="form-label">
-             Numero de Sub Cuenta
-             <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             Nombre Sub Cuenta
-             <input type='text' name='UNIDADES' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             Saldo
-             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
-             <label class="form-label">
-             Fecha
-             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
-         
- 
-             <a href="" class="btn btn-secondary">Cancelar</a>
-             <button type="submit" class="btn btn-primary">Registrar </button>
-             </form>
-             </div> 
-             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-             </center>
-             </div>
-             </div>
-             </div>
-             </div>
-                 <!-- FIN DE MODAL PARA EDITAR  -->
-
+              
+                 <!-- CUERPO DEL DIALOGO PENDIENTE -->
+                 <div class="modal-body">
+                  <center>
+                  <form action="" method="post">
+                  <label class="form-label">
+                  Esta Sub cuenta esta pendiente, no ha sido totalizada por el libro Mayor
+                  <!--<input type='text' name='Clasificacion' class="form-control" required></input> -->
+                  </label>
+                  <!--<label class="form-label">
+                  Numero de Cuenta
+                  <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
+                  </label>
+                  <label class="form-label">
+                  Nombre de Cuenta
+                  <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+                  </label>
+                  <label class="form-label">
+                  Saldo
+                  <input type='number' name='saldo' class="form-control"  required></input> 
+                  </label>
+                  <label class="form-label">
+                  Fecha
+                  <input type='number' name='fecha' class="form-control"  required></input> 
+                  </label>-->
+      
+              
+      
+                  <!--<a href="" class="btn btn-secondary">Cancelar</a>
+                  <button type="submit" class="btn btn-primary">Registrar </button>-->
+                  </form>
+                  </div> 
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                  </center>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                      <!-- FIN DE MODAL PARA PENDIENTE  -->
              
 
 
             
-              
-                  <!-- INICIO MODAL PARA BORRAR  -->
-           <div class="modal-container">
-            <div class="modal fade bd-example-modal-lg" id="dialogo3">
-                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-             <div class="modal-dialog modal-sm">
-             <div class="modal-content">
-                  <!-- CABECERA DEL DIALOGO EDITAR -->
-             <div class="modal-header">
-             <h4 class="modal-title">Eliminar Libro Diario</h4>
-                  <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
-             </div>
-                  <!-- CUERPO DEL DIALOGO BORRAR -->
-             <div class="modal-body">
-             <center>
-             <form action="" method="post">
-             <label class="form-label">
-             ¿ Desea Eliminar la Transaccion ?
-              
-             </label>
-             
-         
- 
-             <a href="" class="btn btn btn-primary">SI</a>
-             <a href="" class="btn btn-secondary">NO</a>
-             
-             </form>
-             </div> 
-             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-             </center>
-             </div>
-             </div>
-             </div>
-             </div>
-                 <!-- FIN DE MODAL PARA BORRAR  -->
 
+
+
+                
+                  <!-- INICIO MODAL PARA PROCESADA  -->
+                  <div class="modal-container">
+                    <div class="modal fade bd-example-modal-lg" id="dialogo3">
+                          <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                     <div class="modal-dialog modal-sm">
+                     <div class="modal-content">
+                          <!-- CABECERA DEL DIALOGO PROCESADA-->
+                     <div class="modal-header">
+                     <h4 class="modal-title">Estado de la Sub Cuenta</h4>
+                          <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                     </div>
+                      
+                         <!-- CUERPO DEL DIALOGO PROCESADA -->
+                         <div class="modal-body">
+                          <center>
+                          <form action="" method="post">
+                          <label class="form-label">
+                          Esta Sub cuenta  procesada, ha sido totalizada por el libro Mayor
+                          <!--<input type='text' name='Clasificacion' class="form-control" required></input>--> 
+                          </label>
+                          <!--<label class="form-label">
+                          Numero de Cuenta
+                          <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
+                          </label>
+                          <label class="form-label">
+                          Nombre de Cuenta
+                          <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+                          </label>
+                          <label class="form-label">
+                          Saldo
+                          <input type='number' name='saldo' class="form-control"  required></input> 
+                          </label>
+                          <label class="form-label">
+                          Fecha
+                          <input type='number' name='fecha' class="form-control"  required></input> 
+                          </label>-->
+              
+                      
+              
+                          <!--<a href="" class="btn btn-secondary">Cancelar</a>
+                          <button type="submit" class="btn btn-primary">Registrar </button>-->
+                          </form>
+                          </div> 
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                          </center>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                              <!-- FIN DE MODAL PARA PROCESADA  -->
 
 
 
@@ -538,9 +575,9 @@
 
 
             </div>
-            <p align="right" valign="baseline">
+            <!--<p align="right" valign="baseline">
               <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button>
-            </p>
+            </p>-->
             <div class="row">
           
               <div class="col-lg-12 stretch-card">
@@ -554,12 +591,8 @@
                         <thead>
                           <tr>
                             <th class="text-dark bg-white"> # </th>
-                            <th class="text-dark bg-white"> Numero de Sub Cuenta </th>
-                            <th class="text-dark bg-white"> Nombre Sub Cuenta </th>
-                            <th class="text-dark bg-white"> Saldo Debe </th>
-                            <th class="text-dark bg-white"> Saldo Haber </th>
-                            <th class="text-dark bg-white"> Fecha </th>
-                            <th class="text-dark bg-white"> Acciones </th>
+                            <th class="text-dark bg-white"> Numero Sub Cuenta </th>
+                            <th class="text-dark bg-white"> Estado </th>
                             
 
 
@@ -570,47 +603,27 @@
                           <tr class="text-white bg-dark">
                             <td> 1 </td>
                             <td> 1.1.1 </td>
-                            <td> Efectivo </td>
-                            <td>  </td>
-                            <td> 2500.00 </td>
-                            <td> May 15, 2022 </td>
-                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
+                            <td><button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo1">Ingresada</button>  
                           </tr>
                           <tr class="text-white bg-dark">
-                            <td> 2 </td>
+                            <td> 1 </td>
+                            <td> 1.1.2 </td>
+                            <td><button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo1">Ingresada</button> 
+                          </tr>
+                          <tr class="text-white bg-dark">
+                            <td> 1 </td>
                             <td> 2.1.1 </td>
-                            <td> Proveedores </td>
-                            <td>  </td>
-                            <td> 2500.00 </td>
-                            <td> May 15, 2022 </td>
-                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
+                            <td><button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="#dialogo2">Pendiente</button> 
                           </tr>
                           <tr class="text-white bg-dark">
-                            <td> 3 </td>
-                            <td> 2.1.2 </td>
-                            <td> Clientes </td>
-                            <td> 1500.00 </td>
-                            <td>  </td>
-                            <td> May 15, 2022 </td>
-                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
+                            <td> 1 </td>
+                            <td> 2.1.1 </td>
+                            <td><button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo3">Procesada</button></td>
                           </tr>
                           <tr class="text-white bg-dark">
-                            <td> 4 </td>
-                            <td> 2.1.3 </td>
-                            <td> Acreedores </td>
-                            <td> 1600.00 </td>
-                            <td>  </td>
-                            <td> May 15, 2022 </td>
-                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td> 5 </td>
+                            <td> 1 </td>
                             <td> 3.1.1 </td>
-                            <td> Aportaciones </td>
-                            <td>  </td>
-                            <td> 9000.00 </td>
-                            <td> May 15, 2022 </td>
-                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
+                            <td><button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo3">Procesada</button></td>
                           </tr>
                         </tbody>
                       </table>
