@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <style>
+    input[type=file]::file-selector-button {
+      border: 2px solid #6c5ce7;
+      padding: .2em .4em;
+      border-radius: .2em;
+      background-color: #a29bfe;
+      transition: 1s;
+    }
+    
+    input[type=file]::file-selector-button:hover {
+      background-color: #81ecec;
+      border: 2px solid #00cec9;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -392,7 +418,7 @@
            <div class="modal-container">
            <div class="modal fade bd-example-modal-lg" id="dialogo1">
                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-            <div class="modal-dialog modal-sm">
+            <div class="modal-dialog modal-md">
             <div class="modal-content">
                  <!-- CABECERA DEL DIALOGO NUEVA-->
             <div class="modal-header">
@@ -415,6 +441,22 @@
             Saldo
             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
             </label>
+            <label class="form-label">
+              Comprobante
+              <br>
+              <!--<label id="titulo">subir comprobante</label>-->
+              <!--<div class="mb-3">
+                <!--<label for="formFile" class="form-label">Default file input example</label>-->
+                <!--<input class="form-control" for="titulo" type="file" id="formFile">-->
+              <!--</div>-->
+              <form>
+                <!--<label for="fileUpload">Subir archivo</label>-->
+                <input type="file" id="fileUpload">
+              </form>
+
+
+              <!--<input type="file" name="">-->
+              </label>
             <label class="form-label">
             Fecha
             <input type='date' name='COS PRODUCTO' class="form-control"  required></input> 
@@ -559,6 +601,7 @@
                             <th class="text-dark bg-white"> Nombre Sub Cuenta </th>
                             <th class="text-dark bg-white"> Saldo Debe </th>
                             <th class="text-dark bg-white"> Saldo Haber </th>
+                            <th class="text-dark bg-white"> Comprobantes </th>
                             <th class="text-dark bg-white"> Fecha </th>
                             <th class="text-dark bg-white"> Acciones </th>
                             
@@ -574,6 +617,7 @@
                             <td> Efectivo </td>
                             <td>  </td>
                             <td> 2500.00 </td>
+                            <td> archivo1 </td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
@@ -583,6 +627,7 @@
                             <td> Proveedores </td>
                             <td>  </td>
                             <td> 2500.00 </td>
+                            <td> archivo2 </td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
@@ -592,6 +637,7 @@
                             <td> Clientes </td>
                             <td> 1500.00 </td>
                             <td>  </td>
+                            <td>  archivo3</td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
@@ -601,6 +647,7 @@
                             <td> Acreedores </td>
                             <td> 1600.00 </td>
                             <td>  </td>
+                            <td> archivo4 </td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
@@ -610,6 +657,7 @@
                             <td> Aportaciones </td>
                             <td>  </td>
                             <td> 9000.00 </td>
+                            <td>  archivo5</td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
