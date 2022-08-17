@@ -497,10 +497,22 @@
             <div class="modal-body">
             <center>
             <form action="" method="post">
-            <label class="form-label">
-            Clasificacion
-            <input type='text' name='Clasificacion' class="form-control" required></input> 
-            </label>
+              <label class="form-label">
+                Clasificacion
+                <input type='text' list="lista-clasificacion" name='nombre-periodo' class="form-control" required>
+                <datalist id="lista-clasificacion">
+                  <option value="Acitvo">
+                    <option value="Pasivo">
+                      <option value="Patrimonio">
+                        <option value="Resultado">
+                          
+                        </option>
+
+                      </option>
+                    </option>
+                </datalist>
+                </input>
+              </label>
             <label class="form-label">
             Numero de Cuenta
             <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
