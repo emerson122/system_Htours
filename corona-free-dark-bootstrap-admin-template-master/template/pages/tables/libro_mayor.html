@@ -505,7 +505,7 @@
                     <option value="Pasivo">
                       <option value="Patrimonio">
                         <option value="Resultado">
-                          
+
                         </option>
 
                       </option>
@@ -513,10 +513,11 @@
                 </datalist>
                 </input>
               </label>
-            <label class="form-label">
+
+            <!--<label class="form-label">
             Numero de Cuenta
             <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
-            </label>
+            </label>-->
             <label class="form-label">
             Nombre de Cuenta
             <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
@@ -525,6 +526,7 @@
             Saldo
             <input type='number' name='saldo' class="form-control"  required></input> 
             </label>
+            <label> Debe  <input type=radio>   Haber   <input type=radio></label>
             <label class="form-label">
             Fecha
             <input type='date' name='fecha' class="form-control"  required></input> 
@@ -563,23 +565,44 @@
              <div class="modal-body">
              <center>
              <form action="" method="post">
-             <label class="form-label">
-             Numero de Sub Cuenta
-             <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             Nombre Sub Cuenta
-             <input type='text' name='UNIDADES' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             Saldo
-             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
-             <label class="form-label">
-             Fecha
-             <input type='date' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
-         
+              <label class="form-label">
+                Clasificacion
+                <input type='text' list="lista-clasificacion" name='nombre-periodo' class="form-control" required>
+                <datalist id="lista-clasificacion">
+                  <option value="Acitvo">
+                    <option value="Pasivo">
+                      <option value="Patrimonio">
+                        <option value="Resultado">
+
+                        </option>
+
+                      </option>
+                    </option>
+                </datalist>
+                </input>
+              </label>
+
+            <!--<label class="form-label">
+            Numero de Cuenta
+            <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
+            </label>-->
+            <label class="form-label">
+            Nombre de Cuenta
+            <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+            </label>
+            <label class="form-label">
+            Saldo
+            <input type='number' name='saldo' class="form-control"  required></input> 
+          </label>
+            <label> Debe  <input type=radio>   Haber   <input type=radio></label>
+            
+            
+            
+            <label class="form-label">
+            Fecha
+            <input type='date' name='fecha' class="form-control"  required></input> 
+            </label>
+
  
              <a href="" class="btn btn-secondary">Cancelar</a>
              <button type="submit" class="btn btn-primary">Registrar </button>
