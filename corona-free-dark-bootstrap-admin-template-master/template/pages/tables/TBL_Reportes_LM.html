@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Balance General</title>
+    <title>Reporte Libro Mayor</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -141,46 +141,52 @@
                 </ul>
               </div>
             </li>
-            
-          <!-- Seguridad  -->
-            <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                <span class="menu-icon">
-                  <i class="mdi mdi-security"></i>
-                </span>
-                <span class="menu-title">Seguridad</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Usuarios </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Roles</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Permisos </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> bitacoras </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registrar usuario </a></li>
-                </ul>
-              </div>
-            </li>
-           <!-- Menu Modulos Reportes editable -->
+           <!-- Seguridad  -->
            <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <span class="menu-icon">
-               <i class="mdi mdi-file-document-box"></i>
+                <i class="mdi mdi-security"></i>
               </span>
-              <span class="menu-title">Reportes</span>
+              <span class="menu-title">Seguridad</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="Reportes">
+            <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-               <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_LM.html">Reporte Libro Mayor</a></li>
-               <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_ER.html">Reporte Estado de Resultado</a></li>
-               <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Usuarios </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Roles</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Permisos </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> bitacoras </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registrar usuario </a></li>
               </ul>
             </div>
           </li>
+            <!-- Menu Modulos Reportes editable -->
+            <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-icon">
+                 <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Reportes</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Reportes">
+                <ul class="nav flex-column sub-menu">
+                 <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_LM.html">Reporte Libro Mayor</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_ER.html">Reporte Estado de Resultado</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="TBL_Reporte_BG.html">Reporte Balance General</a></li>
+                </ul>
+              </div>
+            </li>
 
-          
+            <li class="nav-item menu-items">
+              <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
+                <span class="menu-icon">
+                  <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Documentation</span>
+              </a>
+            </li>
           </ul>
         </nav>
     
@@ -382,35 +388,47 @@
           </nav>
           <!-- fin de menu -->
 
- <!-- INICIO MODAL PARA NUEVA  -->
+ <!-- INICIO MODAL PARA NUEVA  REPORTE LM-->
  <div class="modal-container">
   <div class="modal fade bd-example-modal-lg" id="dialogo1">
         <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-   <div class="modal-dialog modal-sm">
+   <div class="modal-dialog modal-md">
    <div class="modal-content">
         <!-- CABECERA DEL DIALOGO NUEVA-->
    <div class="modal-header">
-   <h4 class="modal-title"> <center> Seleccionar Periodo</center></h4>
-        <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+   <h4 class="modal-title"> <center> Generar un Nuevo Reporte</center></h4>
+   <button align="right" type="button" class="btn btn-danger" data-dismiss="modal">X</button>     
+   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
    </div>
         <!-- CUERPO DEL DIALOGO NUEVA -->
    <div class="modal-body">
    <center>
    <form action="" method="post">
-   <Label>Seleccionar periodo</Label>
-   <select name="" id="">
-    <option value="" selected></option>
-    <option value="">periodo-2020-ene-1-001</option>
-    <option value="">periodo-2021-ene-1-002</option>
-    <option value="">periodo-2022-ene-1-003</option>
-    </select>
+    <label class="form-label">
+      Ingrese el Nombre: <input type='text' name='namereportlm' class="form-control bg-white" required></input>
+    </label>
+    <br><br>
+    <label class="form-label">
+      Detalle de generar reporte:
+      <input type='text' name='namereportlm' class="form-control bg-white" required></input>
+    </label>
+    <br><br>
+    <p>
+    <label class="form-label">
+      Desde:
+      <input type='date' name='fec-inic' class="form-control" required></input>
+    </label>
+    
+    <label class="form-label">
+      Hasta:
+      <input type='date' name='fec-inic' class="form-control" required></input>
+    </label></p>
     <br>
-    <br>
-   <a href="" class="btn btn-secondary">Cancelar</a>
-   <button type="submit" class="btn btn-primary">Aceptar</button>
+   <a href="" class="btn btn-danger">Cancelar</a>
+   <button type="submit" class="btn btn-success">Aceptar</button>
    </form>
    </div> 
-   <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+   
    </center>
    </div>
    </div>
@@ -418,188 +436,249 @@
    </div>
        <!-- FIN DE MODAL PARA NUEVA  -->
 
-
-        <!-- partial -->
-        <div class="main-panel">
-          <div class="content-wrapper">
-            <center> <h1>Balance General H Tours Honduras</h1> </center>
-            <h5>________________________________________________________________________________________________________________</h5>
-            <!-- <ul class="nav nav-pills nav-stacked">
-              <li class="active"><a href="#"></a></li>
-            </ul> -->
-            <center> <h1>Periodo</h1>
-              
-              <h1 id="nombre-periodo">1-2021-ene-1-001</h1> </center>
-              <!-- <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#"></a></li>
-              </ul> -->
-              
-              
-              <center>
-                <br>
-                <h3>Desde: <input  type="date"  aria-label="Disabled input example" value="2021-01-01"  readonly >  Hasta: <input type="date" value="2021-12-01" readonly></h3>
-              </center>
-              <p align="right" valign="baseline">
-                <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">Periodo</button>
-              </p>
-            <ul class="nav nav-pills nav-stacked">
-              <li class="active"><a href="#"></a></li>
-              </ul>
-            <div class="page-header">
-              
-            </div>
-            <div class="row">
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body ">
-                    <center><h4 class="card-title">Activos</h4></center>
-                    <!-- <p class="card-description"> Add class <code>.table</code> -->
-                    </p>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-contextual">
-                        <thead>
-                           <tr class="text-dark bg-white">
-                            <th class="text-dark bg-white">Libro Mayor</th>
-                            <th class="text-dark bg-white">Cuenta</th>
-                            <th class="text-dark bg-white">Total</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                           <tr class="text-white bg-dark">
-                            <td>1</td>
-                            <td>Bancos</td>
-                            <td>5000</td>
-                            
-                          </tr>
-                           <tr class="text-white bg-dark">
-                            <td>2</td>
-                            <td>Caja</td>
-                            <td>6000</td>
-                            
-                          </tr>
-                           <tr class="text-white bg-dark">
-                            <td>3</td>
-                            <td>Efectivo</td>
-                            <td>7000</td>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <center><h4 class="card-title">Pasivos</h4></center>
-                    <!-- <p class="card-description"> Add class <code>.table-hover</code> -->
-                    </p>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-contextual">
-                        <thead>
-                          <tr class="text-dark bg-white">
-                            <th class="text-dark bg-white">Libro Mayor</th>
-                            <th class="text-dark bg-white">Cuentas</th>
-                             <th class="text-dark bg-white">Total</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="text-white bg-dark">
-                            <td>4</td>
-                            <td>Proveedores</td>
-                            <td>1000</td>
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td>5</td>
-                            <td>Documentos por pagar</td>
-                            <td>3000</td>
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td>6</td>
-                            <td>Prestamos Bancarios</td>
-                            <td>3000</td>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <center><h4 class="card-title">Patrimonio</h4></center>
-                    <!-- <p class="card-description"> Add class <code>.table-striped</code> -->
-                    </p>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-contextual">
-                        <thead>
-                          <tr class="text-dark bg-white">
-                            <th class="text-dark bg-white">Libro Mayor</th>
-                            <th class="text-dark bg-white">Cuentas</th>
-                             <th class="text-dark bg-white">Total</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="text-white bg-dark">
-                            <td>7</td>
-                            <td>Capital</td>
-                            <td>3000</td>
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td>8</td>
-                            <td>Reserva Legal</td>
-                            <td>3000</td>
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td>9</td>
-                            <td>Otras Reservas</td>
-                            <td>7000</td>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <center><h4 class="card-title">Saldos Balance</h4></center>
-                    <!-- <p class="card-description"> Add class <code>.table-striped</code> -->
-                    </p>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-contextual">
-                        <thead>
-                          <tr class="text-dark bg-white">
-                            <th class="text-dark bg-white">#</th>
-                            <th class="text-dark bg-white">Periodo</th>
-                             <th class="text-dark bg-white">Fecha</th>
-                             <th class="text-dark bg-white">Total Activo</th>
-                             <th class="text-dark bg-white">Total Pasivo + Patrimonio</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="text-white bg-dark">
-                            <td>1</td>
-                            <td>1-2021-ene-1-001</td>
-                            <td>31/12/2021</td>
-                            <td>18,000</td>
-                            <td>18,000</td>
-                          </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        
+        <!-- CODIGO INTERFAZ REPORTES LM -->
+        <div class="main-panel" >     
+          
+          <div class="content-wrapper" class="panel panel-default" style="background-color:rgba(2, 115, 134, 0.911);">
+            <div class="panel-body" >
+              <center> <h1>Reporte Libro Mayor</h1> </center>
             </div>
           </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+          <div class="content-wrapper" style="background-color:rgba(0, 68, 85, 0.945);">
+            <!-- CODIGO DE LOS GRUPOS DE SELECCION EN TABLAS-->
+                    
+        <table align="center"> <!-- TABLA PRINCIPAL -->
+          <tr>
+          <td>
+            <!-- TABLA SECUNDARIA 1 COLUMNA -->
+            <table cellspacing="70" cellpadding="10" border="3" bordercolor="016EA4" rules="none" bgcolor="00919E">
+              <tr>
+                <td align="center">
+                  <center>
+                   <h3>Fecha Desde:</h3>
+                  </center>
+                </td>
+                <td>
+                  <center>        
+                      <label class="form-label">
+                      <input type='date' name='fec-inic' class="form-control" required></input>
+                      </label>
+                   </center>
+                </td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <center><h3>Feha Hasta:</h3>
+                  </center>         
+                </td>
+              <td>
+                <center>       
+                  <label class="form-label">
+                  <input type='date' name='fec-inic' class="form-control" required></input>
+                  </label>
+                 </center>
+              </td>
+              </tr>
+            </table>
+          </td>
+          <!-- ESPACIO DE TABLAS -->
+          <td width="13%"></td>
+          <!-- TERCERA TABLA 2 COLUMNA -->
+          <td>
+            <table  table-responsive border="3" cellspacing="70" cellpadding="10" bordercolor="016EA4" rules="none" bgcolor="00919E">
+              <tr>
+                <td>
+                  <center>
+                    <br>
+                    <h3>Nombre del Reporte:</h3>
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center>
+                    <form action="../../form-result.php" method="post" target="_blank">
+                      <input type="search" name="busquedamodelos" list="listamodelos">
+                      <input type="submit" value="Buscar">
+                  </form> 
+                  <datalist id="listamodelos">
+                  
+                    <option value="ReporteLM_Libro">
+                  
+                    <option value="ReporteLM_Cuentas">
+                  
+                    <option value="ReporteLM_Cuenta">
+                  
+                  </datalist>
+                  </center>         
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        </table>
+
+      <table align="center" table-responsive cellspacing="15" cellpadding="15">
+        <tr><td></td>
+          <td></td>
+          <td ></td>
+          <td ></td>
+          <td ></td>
+          <td ></td>
+        </tr>
+        <tr> 
+          <td>
+            <p align="left" valign="baseline">            
+             <a type="button"  class="btn btn-outline-primary" href="javascript:window.print();">📑 Generar PDF</a>
+            </p>
+          </td>
+          <td ></td>
+          <td ></td>
+          <td>
+            <p align="center" valign="baseline">
+              <button type="button"  class="btn btn-outline-success"  data-toggle="modal" data-target="#dialogo1"><div class="spinner-grow spinner-grow-sm"></div>  Nuevo</button>
+            </p>
+          </td>
+          <td ></td>
+          <td ></td>
+          <td>
+            <p align="right" valign="baseline">
+             <button type="button"  class="btn btn-outline-info"  data-toggle="modal" data-target="#dialogo11" ><div class="spinner-grow spinner-grow-sm"></div>   Previsualizar</button>
+            </p>
+          </td>
+        </tr>
+      </table>
+        <!-- FIN TABLA PRINCIPAL --> 
+          
+          <!-- MUESTRA LAS TABLAS Y LA INFORMACION -->        
+           <div class="row">
+          
+            <div class="col-lg-12 stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title"> <center>Reportes realizados</center></h4>
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered table-contextual table-dark table-striped table-sm">
+                      <thead>
+                        <tr>
+                          
+                          <th class="text-dark bg-white">N°</th>
+                          <th class="text-dark bg-white"> Nombre del Reporte</th>
+                          <th class="text-dark bg-white"> Fecha de Registro</th>
+                          <th class="text-dark bg-white"> Acciones  </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr> <!-- class="text-white bg-dark" --> 
+                          <td> 1</td>
+                          <td>ReporteLM_Libro Mayor</td>
+                          <td>08 Agosto 2022</td>
+                          <td align="center">
+                            <button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo2">Editar Nombre</button></td>  
+                        </tr>
+                        <tr><!-- class="text-white bg-dark" -->
+                          <td> 2 </td>
+                          <td>ReporteLM_Cuentas del Libro Mayor</td>
+                          <td>08 Agosto 2022</td>
+                          <td align="center">
+                            <button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo2">Editar Nombre</button></td>
+                        </tr>
+                        <tr>
+                          <td> 3 </td>
+                          <td>ReporteLM_Cuenta especifica</td>
+                          <td>08 Agosto 2022</td>
+                          <td align="center">
+                            <button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo2">Editar Nombre</button></td>
+                        </tr>                       
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>  
+               <!-- INICIO MODAL PARA PREVISUALIZAR  -->
+               <div class="modal-container">
+                <div class="modal fade bd-example-modal-lg" id="dialogo11">
+                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                  <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                      <!-- CABECERA DEL DIALOGO PREVISUALIZAR-->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Previsualización de Reporte</h4>
+                        <button align="right" type="button" class="btn btn-danger" data-dismiss="modal">X</button>
+                        <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                      </div>
+                      <!-- CUERPO DEL DIALOGO PREVISUALIZAR -->
+                      <div class="modal-body">
+                        <center>
+                          <form action="" method="post">
+                            <img class="img" width="450" height="300"  src="../../assets/images/LM.jpg" alt="">
+                            <br>
+                            <br>
+                            <a href="" class="btn btn-danger">Cerrar Vista</a>
+                            <button type="submit" class="btn btn-primary">Repotorte Anterior</button>
+                          </form>
+                      </div>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FIN DE MODAL PARA PREVISUALIZAR  -->
+              <!-- INICIO MODAL PARA EDITAR  -->
+              <div class="modal-container">
+                <div class="modal fade bd-example-modal-lg" id="dialogo2">
+                      <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                 <div class="modal-dialog modal-md">
+                 <div class="modal-content">
+                      <!-- CABECERA DEL DIALOGO EDITAR -->
+                 <div class="modal-header">
+                 <h4 class="modal-title">Editar Nombre de Reporte</h4>
+                 <button align="right" type="button" class="btn btn-danger" data-dismiss="modal">X</button>
+                      <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                 </div>
+                      <!-- CUERPO DEL DIALOGO EDITAR -->
+                 <div class="modal-body">
+                   <center>
+                     <Label>Selecione el reporte:</Label>
+                     <br>
+                     <form action="" method="post">
+                     <select name="" id="">
+                      <option value="" selected></option>
+                      <option value="">ReporteLM_Libro</option>
+                      <option value="">ReporteLM_Cuentas</option>
+                      <option value="">ReporteLM_Cuenta</option>
+                      </select>
+                      <br>
+                      <br>
+                      <label class="form-label">
+                       Ingrese el Nuevo Nombre:
+                       <input type='text' name='namereportlm' class="form-control bg-white" required></input>
+                     </label>
+                     <br>
+                     <br>
+                     <a href="" class="btn btn-danger">Cancelar</a>
+                     <button type="submit" class="btn btn-success">Aceptar</button>
+                     </form>
+                     </div> 
+                   </center>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                     <!-- FIN DE MODAL PARA EDITAR  -->   
             </div>
-          </footer>
-          <!-- partial -->
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+          </div>
+        </footer>
+        <!-- partial -->
         </div>
         <!-- main-panel ends -->
       </div>
