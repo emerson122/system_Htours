@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <style>
+    input[type=file]::file-selector-button {
+      border: 2px solid #6c5ce7;
+      padding: .2em .4em;
+      border-radius: .2em;
+      background-color: #a29bfe;
+      transition: 1s;
+    }
+    
+    input[type=file]::file-selector-button:hover {
+      background-color: #81ecec;
+      border: 2px solid #00cec9;
+    }
+  </style>
+
+
+<!-- ESTE CSS ES PARA OCULTAR DATOS EN LA IMPRESION-->
+  <style>
+    
+@media print{
+  .oculto-impresion, .oculto-impresion *{
+    display: none !important;
+  }
+}
+
+/*<elemento class="oculto-impresion"><!-- AQUI EMPIEZA PARA OCULTAR EN LA IMPRESION INICIO-->
+      </elemento><!-- AQUI SE QUITA PARA IMPRIMIR ESTO NO SALDRA FIN-->*/
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Libro diario</title>
+    
+
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -19,9 +62,17 @@
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
   <body>
+
+    
+
+
     <div class="container-scroller">
        <!-- partial:../../partials/_sidebar.html -->
     <!-- inicio de todo el menu -->
+
+    <elemento class="oculto-impresion"><!-- AQUI EMPIEZA PARA OCULTAR EN LA IMPRESION INICIO111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111------->
+
+
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
         <a class="sidebar-brand brand-logo" href="../../index.html"><H3><font color="white"> System H Tours</font></H3></a>
@@ -162,29 +213,53 @@
             </ul>
           </div>
         </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-file-document-box"></i>
-            </span>
-            <span class="menu-title">Documentation</span>
-          </a>
-        </li>
+     
+            <!-- Menu Modulos Reportes editable -->
+            <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-icon">
+                  <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Reportes</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Reportes">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="tablas-pendientes">Reporte Libro Mayor</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="tablas-peendientes">Reporte Estado de Resultado</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
+                </ul>
+              </div>
+            </li>
       </ul>
     </nav>
 
     <!-- inicio de menu  -->
+
+  </elemento><!-- AQUI SE QUITA PARA IMPRIMIR ESTO NO SALDRA FIN-------11111111111111111111111111111111111111111111111111111111111111111111111111111111111>
+
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:../../partials/_navbar.html -->
+
+
+      
+
+ 
       <nav class="navbar p-0 fixed-top d-flex flex-row">
+
+        <elemento class="oculto-impresion"> <!-- AQUI EMPIEZA PARA OCULTAR EN LA IMPRESION INICIO------------2222222222222222222222222222222222222222222222222222222-->
         <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo-mini" href="../../index.html"><H3><font color="white">SHT</font></H3></a>
+             <a class="navbar-brand brand-logo-mini" href="../../index.html"><H3><font color="white">SHT</font></H3></a>  
         </div>
         <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
           </button>
+
+        </elemento><!-- AQUI SE QUITA PARA IMPRIMIR ESTO NO SALDRA FIN-22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222--> 
+
+
           <!-- <ul class="navbar-nav w-100">
             <li class="nav-item w-100">
               <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
@@ -330,8 +405,16 @@
             <li class="nav-item dropdown">
               <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                 <div class="navbar-profile">
+
+                  <elemento class="oculto-impresion"> <!-- AQUI EMPIEZA PARA OCULTAR EN LA IMPRESION INICIO--333333333333333333333333333333333333333333333333333333333333-->
+
+
                   <img class="img-xs rounded-circle" src="../../assets/images/faces/usuario1.png" alt="">
                   <p class="mb-0 d-none d-sm-block navbar-profile-name">Usuario1</p>
+
+
+                </elemento><!-- AQUI SE QUITA PARA IMPRIMIR ESTO NO SALDRA FIN---33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
                   <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                 </div>
               </a>
@@ -369,12 +452,24 @@
           </button>
         </div>
       </nav>
+
+
+
       <!-- fin de menu -->
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
             <!--<center> <h1>Libro Diario</h1> </center>-->
             <center><h1>Libro Diario</h1> </center>
+
+
+
+<!--OCULTAR ELEMENTOS CON CSS ESTA ES LA CLASE LO QUE ESTE DENTRO APARECE EN LA PAGINA PERO NO EN LA IMPRESION EL CSS ESTA AL INICIO-->
+
+            <!--<elemento class="oculto-impresion">  AQUI VA LO QUE SE QUIERE OCULTAR   </elemento>-->
+
+
+
             <div class="page-header">
              <!--<center><h1> Libro Diario </h1></center>--> 
              
@@ -392,7 +487,7 @@
            <div class="modal-container">
            <div class="modal fade bd-example-modal-lg" id="dialogo1">
                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-            <div class="modal-dialog modal-sm">
+            <div class="modal-dialog modal-md">
             <div class="modal-content">
                  <!-- CABECERA DEL DIALOGO NUEVA-->
             <div class="modal-header">
@@ -415,6 +510,22 @@
             Saldo
             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
             </label>
+            <label class="form-label">
+              Comprobante
+              <br>
+              <!--<label id="titulo">subir comprobante</label>-->
+              <!--<div class="mb-3">
+                <!--<label for="formFile" class="form-label">Default file input example</label>-->
+                <!--<input class="form-control" for="titulo" type="file" id="formFile">-->
+              <!--</div>-->
+              <form>
+                <!--<label for="fileUpload">Subir archivo</label>-->
+                <input type="file" id="fileUpload">
+              </form>
+
+
+              <!--<input type="file" name="">-->
+              </label>
             <label class="form-label">
             Fecha
             <input type='date' name='COS PRODUCTO' class="form-control"  required></input> 
@@ -540,7 +651,8 @@
 
             </div>
             <p align="right" valign="baseline">
-              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button>
+              <!--<input type="button" value="Imprime esta pagina" onclick="window.print()">-->
+              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <a type="button"  class="btn btn-success" href="javascript:window.print();">Generar PDF</a>
             </p>
             <div class="row">
           
@@ -559,6 +671,7 @@
                             <th class="text-dark bg-white"> Nombre Sub Cuenta </th>
                             <th class="text-dark bg-white"> Saldo Debe </th>
                             <th class="text-dark bg-white"> Saldo Haber </th>
+                            <th class="text-dark bg-white"> Comprobantes </th>
                             <th class="text-dark bg-white"> Fecha </th>
                             <th class="text-dark bg-white"> Acciones </th>
                             
@@ -574,6 +687,7 @@
                             <td> Efectivo </td>
                             <td>  </td>
                             <td> 2500.00 </td>
+                            <td> <a href="">   image1651861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
@@ -583,6 +697,7 @@
                             <td> Proveedores </td>
                             <td>  </td>
                             <td> 2500.00 </td>
+                            <td> <a href="">   image1751861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
@@ -592,6 +707,7 @@
                             <td> Clientes </td>
                             <td> 1500.00 </td>
                             <td>  </td>
+                            <td> <a href="">   image1851861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
@@ -601,6 +717,7 @@
                             <td> Acreedores </td>
                             <td> 1600.00 </td>
                             <td>  </td>
+                            <td> <a href="">   image1951861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
@@ -610,6 +727,7 @@
                             <td> Aportaciones </td>
                             <td>  </td>
                             <td> 9000.00 </td>
+                            <td> <a href="">   image2051861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>

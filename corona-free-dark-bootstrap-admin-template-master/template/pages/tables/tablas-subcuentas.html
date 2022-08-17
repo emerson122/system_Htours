@@ -162,14 +162,23 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item menu-items">
-        <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
-          <span class="menu-icon">
-            <i class="mdi mdi-file-document-box"></i>
-          </span>
-          <span class="menu-title">Documentation</span>
-        </a>
-      </li>
+       <!-- Menu Modulos Reportes editable -->
+            <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-icon">
+                  <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Reportes</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Reportes">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="tablas-pendientes">Reporte Libro Mayor</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="tablas-peendientes">Reporte Estado de Resultado</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
+                </ul>
+              </div>
+            </li>
     </ul>
   </nav>
 
@@ -409,7 +418,7 @@
                         <tbody>
                           <tr class="text-white bg-dark">
                             <td> 1</td>
-                            <td> 1.ACTIVO</td>
+                            <td> ACTIVO</td>
                             <td> CAJA</td>
                             <td> 1.1.1 </td>
                             <td> EFECTIVO</td>
@@ -418,7 +427,7 @@
                           </tr>
                           <tr class="text-white bg-dark">
                             <td> 2 </td>
-                            <td> 2.PASIVO </td>
+                            <td> PASIVO </td>
                             <td> PROVEEDORES </td>
                             <td> 2.1.1</td>
                             <td> EMPRESA X </td>
@@ -426,7 +435,7 @@
                           </tr>
                           <tr class="text-white bg-dark">
                             <td> 3 </td>
-                            <td> 3.PATRIMONIO </td>
+                            <td> PATRIMONIO </td>
                             <td> CAPITAL </td>
                             <td> 3.1.1</td>
                             <td> APORTACIONES </td>
