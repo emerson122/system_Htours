@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Objetos</title>
+    <title>Permisos</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -108,16 +108,16 @@
             </li>
             <!-- periodo  -->
             <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#objetos" aria-expanded="false" aria-controls="ui-basic">
+              <a class="nav-link" data-toggle="collapse" href="#permisos" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-icon">
                   <i class="mdi mdi-table-large"></i>
                 </span>
-                <span class="menu-title">Objetos</span>
+                <span class="menu-title">permisos</span>
                 <i class="menu-arrow"></i>
               </a>
-              <div class="collapse" id="objetos">
+              <div class="collapse" id="permisos">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="Objetos.html">Objetos</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="permisos.html">permisos</a></li>
                   </ul>
               </div>
             </li>
@@ -152,17 +152,17 @@
               </a>
               <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Usuarios </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Roles</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Permisos </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> bitacoras </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registrar usuario </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Parametro </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Preguntas Usuario </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Preguntas </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Historial Contraseña </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Objetos </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Usuarios </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Roles</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Permisos </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> bitacoras </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registrar usuario </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Parametro </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Preguntas Usuario </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Preguntas </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Historial Contraseña </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Objetos </a></li>
                 </ul>
               </div>
             </li>
@@ -382,7 +382,7 @@
              <div class="modal-content">
                   <!-- CABECERA DEL DIALOGO NUEVA-->
              <div class="modal-header">
-             <h4 class="modal-title">Ingresar Objetos</h4>
+             <h4 class="modal-title">Ingresar Permisos</h4>
                   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
              </div>
                   <!-- CUERPO DEL DIALOGO NUEVA -->
@@ -390,18 +390,24 @@
              <center>
              <form action="" method="post">
              <label class="form-label">
-              Objeto
-             <input type='text' name='Clasificacion' class="form-control" required></input> 
+              Id Objeto
+             <input type='number' name='Clasificacion' class="form-control" required></input> 
              </label>
              <label class="form-label">
-             Descripcion
-             <input type='text' name='Descripcion' class="form-control" required></input> 
+             Permiso Insercion
+             <input type='text' name='permiso insercion' class="form-control" required></input> 
              </label>
              <label class="form-label">
-             Tipo Objeto
-             <input type='text' name='Tipo' class="form-control"  required></input> 
+             Permiso Eliminacion
+             <input type='text' name='Permiso Eliminacion' class="form-control"  required></input> 
              </label>
              <label class="form-label">
+             Permiso Actualizacion
+             <input type='text' name='permiso' class="form-control"  required></input> 
+             </label>
+             <label class="form-label">
+             Permiso Consulta
+             <input type='text' name='fecha' class="form-control"  required></input> 
              </label>
  
          
@@ -430,7 +436,7 @@
               <div class="modal-content">
                    <!-- CABECERA DEL DIALOGO EDITAR -->
               <div class="modal-header">
-              <h4 class="modal-title">Editar Parametro</h4>
+              <h4 class="modal-title">Editar Permisos</h4>
                    <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
               </div>
                    <!-- CUERPO DEL DIALOGO EDITAR -->
@@ -438,18 +444,24 @@
               <center>
               <form action="" method="post">
               <label class="form-label">
-              Objeto
-              <input type='text' name='OBJETO' class="form-control" required></input> 
+              Id Objeto
+              <input type='text' name='PARAMETRO' class="form-control" required></input> 
               </label>
               <label class="form-label">
-              Descripcion
-              <input type='text' name='DESCRIPCION' class="form-control" required></input> 
+              Permiso Insersion 
+              <input type='number' name='PERMISO INSERCION' class="form-control" required></input> 
               </label>
               <label class="form-label">
-              Tipo Objeto
-              <input type='text' name='TIPO OBJETO' class="form-control"  required></input> 
+              Permiso Eliminacion
+              <input type='text' name='PERMISO ELIMINACION' class="form-control"  required></input> 
               </label>
               <label class="form-label">
+              Permiso Actualizacion 
+              <input type='text' name='PERMISO ACTUALIZACION' class="form-control"  required></input> 
+              </label>
+              <label class="form-label">
+              Permiso Consultar
+              <input type='text' name='PERMISO CONSULTAR' class="form-control"  required></input> 
               </label>
           
   
@@ -478,7 +490,7 @@
               <div class="modal-content">
                    <!-- CABECERA DEL DIALOGO EDITAR -->
               <div class="modal-header">
-              <h4 class="modal-title">Eliminar Objeto</h4>
+              <h4 class="modal-title">Eliminar permisos</h4>
                    <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
               </div>
                    <!-- CUERPO DEL DIALOGO BORRAR -->
@@ -508,7 +520,7 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <center> <h1>Objetos H Tours Honduras</h1> </center>
+            <center> <h1>Permisos H Tours Honduras</h1> </center>
             <h5>________________________________________________________________________________________________________________</h5>
             <!-- <ul class="nav nav-pills nav-stacked">
               <li class="active"><a href="#"></a></li>
@@ -529,7 +541,7 @@
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <center><h4 class="card-title">Registros de Objetos</h4></center>
+                    <center><h4 class="card-title">Registros de permisos</h4></center>
                     <!-- <p class="card-description"> Add class <code>.table-striped</code> -->
                     </p>
                     <div class="table-responsive">
@@ -537,9 +549,11 @@
                         <thead>
                           <tr class="text-dark bg-white">
                             <th class="text-dark bg-white">#</th>
-                            <th class="text-dark bg-white">Objetos</th>
-                             <th class="text-dark bg-white">Descripción</th>
-                             <th class="text-dark bg-white">Tipo de objetos</th>
+                            <th class="text-dark bg-white">Id Objeto</th>
+                             <th class="text-dark bg-white">Permiso Insercion</th>
+                             <th class="text-dark bg-white">Permiso Eliminacion</th>
+                             <th class="text-dark bg-white">Permiso Actualizacion</th>
+                             <th class="text-dark bg-white">Permiso Consultar</th>
                              <th class="text-dark bg-white">Acciones</th>
                           </tr>
                         </thead>
@@ -547,24 +561,30 @@
                           <tr class="text-white bg-dark">
                             <td>1</td>
                             <td>Objeto1</td>
-                            <td>Usuario</td>
-                            <td>Cuenta</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
 
                           </tr>
                           <tr class="text-white bg-dark">
                             <td>2</td>
                             <td>Objeto2</td>
-                            <td>Administrador</td>
-                            <td>Cuenta</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
 
                           </tr>
                           <tr class="text-white bg-dark">
                             <td>3</td>
                             <td>Objeto3</td>
-                            <td>Administrador</td>
-                            <td>Cuenta</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
+                            <td>Si</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
 
                         </tbody>

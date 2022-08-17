@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Usuarios</title>
+    <title>Bitacor</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -94,42 +94,41 @@
                 <span class="menu-icon">
                   <i class="mdi mdi-laptop"></i>
                 </span>
-                <span class="menu-title">Cuentas</span>
+                <span class="menu-title">Seguridad</span>
                 <i class="menu-arrow"></i>
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="tablas-crear.cuenta.html">Crear Cuentas</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="tablas-subcuentas.html">Crear Subcuentas</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="libro_diario.html">Libro Diario</a></li>
-                </ul>
+                  <li class="nav-item"> <a class="nav-link" href="Usuarios.html">Usuarios</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Roles.html">Rol usuario</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Preguntas_usuario.html">Preguntas_usuario</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Parametros.html">Parametros</a></li>
+                  </ul>
               </div>
             </li>
             <!-- periodo  -->
             <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#periodo-contable" aria-expanded="false" aria-controls="ui-basic">
+              <a class="nav-link" data-toggle="collapse" href="#bitacora" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-icon">
                   <i class="mdi mdi-table-large"></i>
                 </span>
-                <span class="menu-title">Periodo</span>
+                <span class="menu-title">bitacora</span>
                 <i class="menu-arrow"></i>
               </a>
-              <div class="collapse" id="periodo-contable">
+              <div class="collapse" id="bitacora">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="tablas-periodo.html">Periodo/Libro Mayor</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="Balance-GL.html">Balance General</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="Consultas-estadoDeResultados.html">Estado de Resultado</a></li>
-                </ul>
+                  <li class="nav-item"> <a class="nav-link" href="Bitacora.html">bitacora</a></li>
+                  </ul>
               </div>
             </li>
-  
+    
             <!-- mantenimiento -->
             <li class="nav-item menu-items">
               <a class="nav-link" data-toggle="collapse" href="#mantenimiento" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-icon">
                   <i class="mdi mdi-file-document-box"></i>
                 </span>
-                <span class="menu-title">Manteniminento</span>
+                <span class="menu-title">Entrada</span>
                 <i class="menu-arrow"></i>
               </a>
               <div class="collapse" id="mantenimiento">
@@ -159,29 +158,25 @@
                   <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> bitacoras </a></li>
                   <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
                   <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registrar usuario </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Parametro </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Preguntas Usuario </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Preguntas </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Historial Contraseña </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Objetos </a></li>
                 </ul>
               </div>
             </li>
-           <!-- Menu Modulos Reportes editable -->
             <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
+              <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
                 <span class="menu-icon">
                   <i class="mdi mdi-file-document-box"></i>
                 </span>
-                <span class="menu-title">Reportes</span>
-                <i class="menu-arrow"></i>
+                <span class="menu-title">Documentation</span>
               </a>
-              <div class="collapse" id="Reportes">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="tablas-pendientes">Reporte Libro Mayor</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="tablas-peendientes">Reporte Estado de Resultado</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
-                </ul>
-              </div>
             </li>
           </ul>
         </nav>
-  
+    
         <!-- inicio de menu  -->
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
@@ -387,7 +382,7 @@
              <div class="modal-content">
                   <!-- CABECERA DEL DIALOGO NUEVA-->
              <div class="modal-header">
-             <h4 class="modal-title">Ingresar Usuarios</h4>
+             <h4 class="modal-title">Ingresar Bitacora</h4>
                   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
              </div>
                   <!-- CUERPO DEL DIALOGO NUEVA -->
@@ -395,24 +390,22 @@
              <center>
              <form action="" method="post">
              <label class="form-label">
-             Clasificacion
-             <input type='text' name='Clasificacion' class="form-control" required></input> 
+              Fecha Registro
+             <input type='number' name='Clasificacion' class="form-control" required></input> 
              </label>
              <label class="form-label">
-             Numero de Cuenta
-             <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
+             Usuario Registro
+             <input type='text' name='usuario registro' class="form-control" required></input> 
              </label>
              <label class="form-label">
-             Nombre de Cuenta
-             <input type='Password' name='Nombre de Cuenta' class="form-control"  required></input> 
+             Acciones en el sistema
+             <input type='text' name='Permiso Eliminacion' class="form-control"  required></input> 
              </label>
              <label class="form-label">
-             Saldo
-             <input type='number' name='saldo' class="form-control"  required></input> 
+             Descripcion Bitacora
+             <input type='text' name='permiso' class="form-control"  required></input> 
              </label>
              <label class="form-label">
-             Fecha
-             <input type='number' name='fecha' class="form-control"  required></input> 
              </label>
  
          
@@ -441,7 +434,7 @@
               <div class="modal-content">
                    <!-- CABECERA DEL DIALOGO EDITAR -->
               <div class="modal-header">
-              <h4 class="modal-title">Editar Usuario</h4>
+              <h4 class="modal-title">Editar Bitacora</h4>
                    <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
               </div>
                    <!-- CUERPO DEL DIALOGO EDITAR -->
@@ -449,20 +442,22 @@
               <center>
               <form action="" method="post">
               <label class="form-label">
-              Numero de Sub Cuenta
-              <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
+              Fecha Registro
+              <input type='number' name='FECHA REGISTRO' class="form-control" required></input> 
               </label>
               <label class="form-label">
-              Nombre Sub Cuenta
-              <input type='text' name='UNIDADES' class="form-control" required></input> 
+              Usuario Registro 
+              <input type='text' name='USUARIO REGISTRO' class="form-control" required></input> 
               </label>
               <label class="form-label">
-              Saldo
-              <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
+              Acciones sistema
+              <input type='text' name='ACCIONES SISTEMA' class="form-control"  required></input> 
               </label>
               <label class="form-label">
-              Fecha
-              <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
+              Descripcion bitacora
+              <input type='text' name='DESCRIPCION BITACORA' class="form-control"  required></input> 
+              </label>
+              <label class="form-label">
               </label>
           
   
@@ -491,7 +486,7 @@
               <div class="modal-content">
                    <!-- CABECERA DEL DIALOGO EDITAR -->
               <div class="modal-header">
-              <h4 class="modal-title">Eliminar usuarios</h4>
+              <h4 class="modal-title">Eliminar Bitacira</h4>
                    <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
               </div>
                    <!-- CUERPO DEL DIALOGO BORRAR -->
@@ -521,7 +516,7 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <center> <h1>Usuarios H Tours Honduras</h1> </center>
+            <center> <h1>Bitacora H Tours Honduras</h1> </center>
             <h5>________________________________________________________________________________________________________________</h5>
             <!-- <ul class="nav nav-pills nav-stacked">
               <li class="active"><a href="#"></a></li>
@@ -542,7 +537,7 @@
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <center><h4 class="card-title">Registros de usuarios</h4></center>
+                    <center><h4 class="card-title">Registros de bitacora</h4></center>
                     <!-- <p class="card-description"> Add class <code>.table-striped</code> -->
                     </p>
                     <div class="table-responsive">
@@ -550,45 +545,44 @@
                         <thead>
                           <tr class="text-dark bg-white">
                             <th class="text-dark bg-white">#</th>
-                            <th class="text-dark bg-white">Usuarios</th>
-                             <th class="text-dark bg-white">Nombre usuario</th>
-                             <th class="text-dark bg-white">Estado</th>
-                             <th class="text-dark bg-white">Contraseña</th>
-                             <th class="text-dark bg-white">Rol</th>
-                             <th class="text-dark bg-white">Ultima Conexión</th>
-                             <th class="text-dark bg-white">Preguntas contestadas</th>
-                             <th class="text-dark bg-white">Primer Ingreso</th>
-                             <th class="text-dark bg-white">Fecha vencimiento</th>
-                             <th class="text-dark bg-white">Correo Electronico</th>
+                            <th class="text-dark bg-white">Fecha registro</th>
+                             <th class="text-dark bg-white">Uusario registro</th>
+                             <th class="text-dark bg-white">Acciones sistema</th>
+                             <th class="text-dark bg-white">Descripcion Bitacora</th>
+                             <th class="text-dark bg-white">Cod usuario</th>
                              <th class="text-dark bg-white">Acciones</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr class="text-white bg-dark">
                             <td>1</td>
-                            <td>Usuario1</td>
-                            <td>Scarleth</td>
-                            <td>Activo</td>
-                            <td>1c7a92ae351d4e21ebdfb897508f59d6
-                            </td>
-                            <td>Usuario</td>
-                            <td>16/08/22</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>25/09/22</td>
-                            <td>scarleth@gmail.com</td>
+                            <td>02/12/2021</td>
+                            <td>Jose</td>
+                            <td>Actualizar</td>
+                            <td>Actualizar</td>
+                            <td>12</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
 
                           </tr>
                           <tr class="text-white bg-dark">
-                            <td>8</td>
-                            <td>Reserva Legal</td>
-                            <td>3000</td>
+                            <td>2</td>
+                            <td>02/12/2021</td>
+                            <td>Cramen</td>
+                            <td>Actualizar</td>
+                            <td>Actualizar</td>
+                            <td>18</td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
+
                           </tr>
                           <tr class="text-white bg-dark">
-                            <td>9</td>
-                            <td>Otras Reservas</td>
-                            <td>7000</td>
+                            <td>3</td>
+                            <td>02/12/2021</td>
+                            <td>Rosa</td>
+                            <td>Actualizar</td>
+                            <td>Actualizar</td>
+                            <td>5</td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
+
                         </tbody>
                       </table>
                     </div>
