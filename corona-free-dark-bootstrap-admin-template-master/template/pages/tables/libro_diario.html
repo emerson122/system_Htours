@@ -30,7 +30,103 @@
 /*<elemento class="oculto-impresion"><!-- AQUI EMPIEZA PARA OCULTAR EN LA IMPRESION INICIO-->
       </elemento><!-- AQUI SE QUITA PARA IMPRIMIR ESTO NO SALDRA FIN-->*/
   </style>
+
+
+
+
+
+
+
+         
+           <!--BUSCADOR VERDE CON CSS INICIO-->
+           
+<style>
+ 
+ 
+  .form-controlprueba
+ {
+   /*width:8000;*/
+     /*position: relative;*/
+     background-color: black;
+     color: white;
+     letter-spacing: 0px;
+     border: 1px solid green;
+     padding: 6px;
+     font-size: 15px;
+     font-family: Arial;
+     font-weight: bold;
+     transition: 0.50s;
+     border-radius:5px;
+ }
+ 
+ </style> 
   
+  <style>
+  
+  
+  .form-controlprueba:hover
+ {
+  border-color: green;
+  box-shadow: 0 0px 10px 0 green inset,0 10px 70px 0 green,
+     0 0px 10px 0 green inset,0 10px 20px 0 green;
+     text-shadow: 0 0 0px green;
+ }
+
+
+
+.btnprueba {
+  
+   /*width:8000;*/
+     /*position: relative;*/
+     
+     background-color: black;
+     color: white;
+     letter-spacing: 0px;
+     border: 1px solid green;
+     padding: 6px;
+     font-size: 15px;
+     font-family: Arial;
+     font-weight: bold;
+     transition: 0.50s;
+     border-radius:5px;
+ }
+ 
+  
+
+
+
+ .btnprueba:hover{
+
+  background-color: green;
+  box-shadow: 0 0px 10px 0 green inset,0 10px 70px 0 green,
+     0 0px 10px 0 green inset,0 10px 20px 0 green;
+     text-shadow: 0 0 0px green;
+ }
+
+
+  </style>
+
+
+
+
+<!--BUSCADOR VERDE CON CSS   FIN-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -235,139 +331,7 @@
           </ul>
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item dropdown d-none d-lg-block">
-              <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
-                <h6 class="p-3 mb-0">Projects</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-file-outline text-primary"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Software Development</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-web text-info"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">UI Development</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-layers text-danger"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Software Testing</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <p class="p-3 mb-0 text-center">See all projects</p>
-              </div>
-            </li>
-            <li class="nav-item nav-settings d-none d-lg-block">
-              <a class="nav-link" href="#">
-                <i class="mdi mdi-view-grid"></i>
-              </a>
-            </li>
-            <li class="nav-item dropdown border-left">
-              <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                <i class="mdi mdi-email"></i>
-                <span class="count bg-success"></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-                <h6 class="p-3 mb-0">Messages</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img src="../../assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
-                    <p class="text-muted mb-0"> 1 Minutes ago </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img src="../../assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
-                    <p class="text-muted mb-0"> 15 Minutes ago </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img src="../../assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
-                    <p class="text-muted mb-0"> 18 Minutes ago </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <p class="p-3 mb-0 text-center">4 new messages</p>
-              </div>
-            </li>
-            <li class="nav-item dropdown border-left">
-              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-                <i class="mdi mdi-bell"></i>
-                <span class="count bg-danger"></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                <h6 class="p-3 mb-0">Notifications</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-calendar text-success"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Event today</p>
-                    <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-settings text-danger"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Settings</p>
-                    <p class="text-muted ellipsis mb-0"> Update dashboard </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-link-variant text-warning"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Launch Admin</p>
-                    <p class="text-muted ellipsis mb-0"> New admin wow! </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <p class="p-3 mb-0 text-center">See all notifications</p>
-              </div>
-            </li>
+       
             <li class="nav-item dropdown">
               <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                 <div class="navbar-profile">
@@ -708,10 +672,65 @@
 
 
             </div>
-            <p align="right" valign="baseline">
+           
+
+            <!--<p align="right" valign="baseline">-->
               <!--<input type="button" value="Imprime esta pagina" onclick="window.print()">-->
-              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <a type="button"  class="btn btn-success" href="javascript:window.print();">Generar PDF</a>
-            </p>
+
+
+              
+
+
+
+
+             <!--
+              <div class="demo">
+                <form class="form-search">
+                  <div class="input-group">
+                    <input class="form-control form-text" maxlength="5" placeholder="Buscar" size="15" type="text" />
+                     
+                  </div>
+                </form>
+              </div>
+            -->
+              
+                
+                
+                <p align="right" valign="baseline">
+
+
+                  
+                   <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <a type="button"  class="btn btn-success" href="javascript:window.print();">Generar PDF</a>
+            
+                   
+              
+
+
+
+                    
+          </p>
+
+          <!--BUSCADOR VERDE CON CSS     INICIO-->
+          <div class="demo">
+            <form class="form-search">
+              <div class="input-group">
+                <input class="form-controlprueba form-text" maxlength="1000" placeholder="Buscar" size="30" type="text" /> &nbsp;
+                <button class="btnprueba"> BUSCAR </button>
+              </div>
+            </form>
+          </div>
+          <!--BUSCADOR VERDE CON CSS     FIN-->
+
+          <!--<span class="input-group-btn"><button class="btn btn-primary"> BUSCAR </button></span>
+          
+          <input class="form-control form-text" maxlength="128" placeholder="Buscar" size="" type="text"/> -->
+
+        
+          
+  
+           
+           
+            <!--</p>-->
             <div class="row">
           
               <div class="col-lg-12 stretch-card">
