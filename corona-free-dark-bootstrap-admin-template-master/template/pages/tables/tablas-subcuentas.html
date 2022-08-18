@@ -392,7 +392,7 @@
               </nav> -->
             </div>
             <p align="right" valign="baseline">
-              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button>
+              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="">Generar PDF</button> 
             </p>
             <div class="row">
           
@@ -405,12 +405,12 @@
                       <table class="table table-bordered table-contextual">
                         <thead>
                           <tr>
-                            <th class="text-success bg-dark"> # </th>
-                            <th class="text-success bg-dark"> <b>CLASIFICACION</b> </th>
-                            <th class="text-success bg-dark"> <b>NOMBRE DE CUENTA</b> </th>
-                            <th class="text-success bg-dark"> </b>NUMERO DE SUBCUENTA</b> </th>
-                            <th class="text-success bg-dark"> </b>NOMBRE DE SUBCUENTA</b> </th>
-                            <th class="text-success bg-dark"> </b>ACCIONES</b> </th>
+                            <th class="text-dark bg-white"> # </th>
+                            <th class="text-dark bg-white"> <b>CLASIFICACION</b> </th>
+                            <th class="text-dark bg-white"> <b>NOMBRE DE CUENTA</b> </th>
+                            <th class="text-dark bg-white"> </b>NUMERO DE SUBCUENTA</b> </th>
+                            <th class="text-dark bg-white"> </b>NOMBRE DE SUBCUENTA</b> </th>
+                            <th class="text-dark bg-white"> </b>ACCIONES</b> </th>
 
                            
                           </tr>
@@ -457,7 +457,7 @@
              <div class="modal-content">
                   <!-- CABECERA DEL DIALOGO NUEVA-->
              <div class="modal-header">
-             <h4 class="modal-title">Ingresar  Nuevo Registro de SubCuenta</h4>
+             <h4 class="modal-title">Ingresar Nueva Sub Cuenta</h4>
                   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
              </div>
                   <!-- CUERPO DEL DIALOGO NUEVA -->
@@ -465,19 +465,36 @@
              <center>
              <form action="" method="post">
              <label class="form-label">
-             CLASIFICACION
+             Clasificacion
              <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
              </label>
-             <label class="form-Select">
-             NOMBRE  DE CUENTA
-             <input type='text' name='UNIDADES' class="form-control" required></input> 
+
+
+             <label class="form-label">
+              Nombre de Cuenta
+              <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control" required>
+              <datalist id="lista-cuentas">
+                <option value="Caja">
+                  <option value="Banco">
+                    <option value="Proveedores">
+                      <option value="Capital">
+
+                      </option>
+
+                    </option>
+                  </option>
+                </option>
+                
+              </datalist>
+              </input>
+            </label>
+
+             <label class="form-label">
+             Numero de la Cuenta
+             <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
              </label>
              <label class="form-label">
-             NUMERO DE CUENTA
-             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
-             <label class="form-label">
-              NOMBRE  DE SUBCUENTA
+              Nombre de la Sub Cuenta
               <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
               </label>
              
