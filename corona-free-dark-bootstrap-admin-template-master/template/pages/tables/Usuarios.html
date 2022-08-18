@@ -235,7 +235,7 @@
           <div class="modal-container">
             <div class="modal fade bd-example-modal-lg" id="dialogo1">
                   <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-             <div class="modal-dialog modal-sm">
+             <div class="modal-dialog modal-md">
              <div class="modal-content">
                   <!-- CABECERA DEL DIALOGO NUEVA-->
              <div class="modal-header">
@@ -246,25 +246,37 @@
              <div class="modal-body">
              <center>
              <form action="" method="post">
+              <label class="form-label">
+                Usuario
+               <input type='text' name='Clasificacion' class="form-control text-white" required></input> 
+               </label>
              <label class="form-label">
-              Nombre de usuario
-             <input type='text' name='Clasificacion' class="form-control" required></input> 
+              Nombre del usuario
+             <input type='text' name='Clasificacion' class="form-control text-white" required></input> 
              </label>
              <label class="form-label">
-             Rol
-             <input type='text' name='Nombre de Cuenta' class="form-control"  required></input> 
-             </label>
-             <label class="form-label">
-             Primer Ingreso
-             <input type='text' name='saldo' class="form-control"  required></input> 
-             </label>
+              Seleccionar el Rol
+               
+               <select class="form-control text-white" name="" id="">
+                 <option value=""></option>
+                 <option value="">Administrador</option>
+                 <option value="">Usuario</option>
+               </select> 
+               </label>
+               <br>
              <label class="form-label">
               Correo Electronico
-             <input type='email' name='saldo' class="form-control"  required></input> 
+             <input type='email' name='saldo' class="form-control text-white"  required></input> 
              </label>
+             <br>
              <label class="form-label">
-             Fecha
-             <input type='date' name='fecha' class="form-control"  required></input> 
+              Contraseña
+              <input type='password' name='CORREO ELECTRONICO' class="form-control text-white"  required></input> 
+              </label>
+              
+             <label class="form-label">
+             Fecha de vencimiento
+             <input type='date' name='fecha' class="form-control text-white"  required></input> 
              </label>
              <br>
          
@@ -289,7 +301,7 @@
             <div class="modal-container">
              <div class="modal fade bd-example-modal-lg" id="dialogo2">
                    <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-              <div class="modal-dialog modal-sm">
+              <div class="modal-dialog modal-md">
               <div class="modal-content">
                    <!-- CABECERA DEL DIALOGO EDITAR -->
               <div class="modal-header">
@@ -300,27 +312,38 @@
               <div class="modal-body">
               <center>
               <form action="" method="post">
+                <label class="form-label">
+                  Usuario
+                 <input type='text' name='Clasificacion' class="form-control text-white" required></input> 
+                 </label>
               <label class="form-label">
-              Numbre usuario
-              <input type='text' name='NOM USUARIO' class="form-control" required></input> 
+              Nombre usuario
+              <input type='text' name='NOM USUARIO' class="form-control text-white" required></input> 
               </label>
               <label class="form-label">
-              Rol
-              <input type='text' name='ROL' class="form-control"  required></input> 
+             Seleccionar el Rol
+              
+              <select class="form-control text-white" name="" id="">
+                <option value=""></option>
+                <option value="">Administrador</option>
+                <option value="">Usuario</option>
+              </select> 
               </label>
-              <label class="form-label">
-              Primer Ingreso
-              <input type='text' name='PRIM INGRESO' class="form-control"  required></input> 
-              </label>
+             <br>
+          
               <label class="form-label">
               Correo Electronico
-              <input type='email' name='CORREO ELECTRONICO' class="form-control"  required></input> 
+              <input type='email' name='CORREO ELECTRONICO' class="form-control text-white"  required></input> 
               </label>
               <label class="form-label">
-              Fecha
-              <input type='date' name='COS PRODUCTO' class="form-control"  required></input> 
+                Contraseña
+                <input type='password' name='CORREO ELECTRONICO' class="form-control text-white"  required></input> 
+                </label>
+              <label class="form-label">
+              Fecha de vencimiento
+              <input type='date' name='COS PRODUCTO' class="form-control text-white"  required></input> 
               </label>
-          
+          <br>
   
               <a href="" class="btn btn-secondary">Cancelar</a>
               <button type="submit" class="btn btn-primary">Registrar </button>

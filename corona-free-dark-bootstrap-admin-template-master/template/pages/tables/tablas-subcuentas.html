@@ -182,7 +182,7 @@
             <!-- <ul class="navbar-nav w-100">
               <li class="nav-item w-100">
                 <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                  <input type="text" class="form-control" placeholder="Search products">
+                  <input type="text" class="form-control text-white" placeholder="Search products">
                 </form>
               </li> -->
             </ul>
@@ -244,7 +244,7 @@
               </nav> -->
             </div>
             <p align="right" valign="baseline">
-              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="">Generar PDF</button> 
+              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <a type="button"  class="btn btn-success" href="javascript:window.print();">Generar PDF</a> 
             </p>
             <div class="row">
           
@@ -318,13 +318,13 @@
              <form action="" method="post">
              <label class="form-label">
              Clasificacion
-             <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
+             <input type='text' name='NOM PRODUCTO' class="form-control  text-white" required></input> 
              </label>
 
 
              <label class="form-label">
               Nombre de Cuenta
-              <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control" required>
+              <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control text-white" required>
               <datalist id="lista-cuentas">
                 <option value="Caja">
                   <option value="Banco">
@@ -343,14 +343,12 @@
 
              <label class="form-label">
              Numero de la Cuenta
-             <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
+             <input type='text' name='COS PRODUCTO' class="form-control text-white"  required></input> 
              </label>
              <label class="form-label">
               Nombre de la Sub Cuenta
-              <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
+              <input type='text' name='COS PRODUCTO' class="form-control text-white"  required></input> 
               </label>
-             
- 
              <a href="" class="btn btn-secondary">Cancelar</a>
              <button type="submit" class="btn btn-primary">NUEVO</button>
              </form>
@@ -364,9 +362,7 @@
                  <!-- FIN DE MODAL PARA NUEVA  -->
                 
                 
-                
-                
-                
+  
                 
                 
                 <!-- INICIO MODAL PARA EDITAR  -->
@@ -386,19 +382,19 @@
                   <form action="" method="post">
                     <label class="form-label">
                       CLASIFICACION
-                      <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
+                      <input type='text' name='NOM PRODUCTO'  value="Activo" class="form-control text-white" required></input> 
                       </label>
                       <label class="form-Select">
                       NOMBRE  DE CUENTA
-                      <input type='text' name='UNIDADES' class="form-control" required></input> 
+                      <input type='text' name='UNIDADES' Value="Caja" class="form-control text-white" required></input> 
                       </label>
                       <label class="form-label">
                       NUMERO DE CUENTA
-                      <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
+                      <input type='number' name='COS PRODUCTO' value="1" class="form-control text-white"  required></input> 
                       </label>
                       <label class="form-label">
                        NOMBRE  DE SUBCUENTA
-                       <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
+                       <input type='text' name='COS PRODUCTO' value="Efectivo" class="form-control text-white"  required></input> 
                        </label>
                   
               

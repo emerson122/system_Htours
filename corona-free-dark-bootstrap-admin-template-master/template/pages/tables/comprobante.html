@@ -142,9 +142,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Libro diario</title>
-    
-
+    <title>Manteniminento/Comprobante</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -304,7 +302,6 @@
              <li class="nav-item"> <a class="nav-link" href="Permisos.html"> Permisos </a></li>
               <li class="nav-item"> <a class="nav-link" href="Bitacora.html">  Bitacoras </a></li>
               <li class="nav-item"> <a class="nav-link" href="Parametros.html">  Parametros </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/tables/admin_ms.html">  Administrador </a></li>
             </ul>
           </div>
         </li>  
@@ -442,7 +439,7 @@
             <center>
             <form action="" method="post">
               <label class="form-label">
-                Nombre de Cuenta
+                Seleccionar Cuenta
                 <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control text-white" required>
                 <datalist id="lista-cuentas">
                   <option value="Caja">
@@ -460,16 +457,14 @@
                 </input>
               </label>
               <label class="form-label">
-                Nombre de Sub Cuenta
-                <input type='text' list="lista-subcuentas" name='nombre-periodo' class="form-control text-white" required>
+                Seleccionar Subcuentas
+                <input type='text' list="lista-subcuentas" name='nombre-periodo' class="form-control" required>
                 <datalist id="lista-subcuentas">
                   <option value="Efectivo">
                     <option value="Cheques">
                       <option value="Depositos">
-                        <option value="Aportacions">
-  
+                        <option value="Aportaciones">  
                         </option>
-  
                       </option>
                     </option>
                   </option>
@@ -477,40 +472,19 @@
                 </datalist>
                 </input>
               </label>
-              <button> + </button>
+             
             <label class="form-label">
-            Saldo
-            <input type='text' name='COS PRODUCTO' class="form-control text-white"  required></input> 
-            </label>
-
-            <br>
-                  <label class="radio-inline">
-                      <input type="radio" name="Tipo" value=1>Debe
-                  </label>
-
-                  &nbsp;&nbsp; 
-                  <label class="radio-inline">
-                      <input type="radio" name="Tipo" value=2>Haber
-                  </label><hr />
-
-
-            <label class="form-label">
-              Comprobante
+              Nombre del comprobante
               <br>
-            
-              <form>
-                <!--<label for="fileUpload">Subir archivo</label>-->
-                <input type="file" id="fileUpload">
-              </form>
-
-
-              <!--<input type="file" name="">-->
-              </label>
-            <label class="form-label">
-            Fecha
-            <input type='date' name='COS PRODUCTO' class="form-control  text-white"  required></input> 
-            </label>
-            <br>
+             <input type="text" class="form-control text-white"> </label>
+             <label class="form-label">
+              Descripcion del comprobante
+              <br>
+             <input type="text" class="form-control text-white"> </label>
+             <label class="form-label">
+              Reemplazar Comprobante
+              <br>
+             <input type="file" class="form-control text-white"> </label>
 
             <a href="" class="btn btn-secondary">Cancelar</a>
             <button type="submit" class="btn btn-primary">Registrar </button>
@@ -567,7 +541,7 @@
 
               <label class="form-label">
                 Nombre de Sub Cuenta
-                <input type='text' list="lista-subcuentas" name='nombre-periodo' class="form-control text-white" required>
+                <input type='text' list="lista-subcuentas" name='nombre-periodo' class="form-control" required>
                 <datalist id="lista-subcuentas">
                   <option value="Efectivo">
                     <option value="Cheques">
@@ -587,7 +561,7 @@
 
             <label class="form-label">
             Saldo
-            <input type='text' name='COS PRODUCTO' class="form-control text-white"  required></input> 
+            <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
             </label>
 
             <br>
@@ -619,7 +593,7 @@
               </label>
             <label class="form-label">
             Fecha
-            <input type='date' name='COS PRODUCTO' class="form-control text-white"  required></input> 
+            <input type='date' name='COS PRODUCTO' class="form-control"  required></input> 
             </label>
             <br>
          
