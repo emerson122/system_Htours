@@ -29,6 +29,86 @@
 
 
 
+
+<!--BUSCADOR VERDE CON CSS INICIO-->
+
+
+ 
+<style>
+ 
+ 
+  .form-controlprueba
+ {
+   /*width:8000;*/
+     /*position: relative;*/
+     background-color: black;
+     color: white;
+     letter-spacing: 0px;
+     border: 1px solid green;
+     padding: 6px;
+     font-size: 15px;
+     font-family: Arial;
+     font-weight: bold;
+     transition: 0.50s;
+     border-radius:5px;
+ }
+ 
+ </style> 
+  
+  <style>
+  
+  
+  .form-controlprueba:hover
+ {
+  border-color: green;
+  box-shadow: 0 0px 10px 0 green inset,0 10px 70px 0 green,
+     0 0px 10px 0 green inset,0 10px 20px 0 green;
+     text-shadow: 0 0 0px green;
+ }
+
+
+
+.btnprueba {
+  
+   /*width:8000;*/
+     /*position: relative;*/
+     
+     background-color: black;
+     color: white;
+     letter-spacing: 0px;
+     border: 1px solid green;
+     padding: 6px;
+     font-size: 15px;
+     font-family: Arial;
+     font-weight: bold;
+     transition: 0.50s;
+     border-radius:5px;
+ }
+ 
+  
+
+
+
+ .btnprueba:hover{
+
+  background-color: green;
+  box-shadow: 0 0px 10px 0 green inset,0 10px 70px 0 green,
+     0 0px 10px 0 green inset,0 10px 20px 0 green;
+     text-shadow: 0 0 0px green;
+ }
+
+
+  </style>
+
+
+
+<!--BUSCADOR VERDE CON CSS  FIN-->
+
+
+
+
+
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -655,6 +735,29 @@
             <p align="right" valign="baseline">
               <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <a type="button"  class="btn btn-warning" href="javascript:window.print();">Generar PDF</a>
             </p>
+
+
+
+
+
+
+
+            
+          <!--BUSCADOR VERDE CON CSS     INICIO-->
+          <div class="demo">
+            <form class="form-search">
+              <div class="input-group">
+                <input class="form-controlprueba form-text" maxlength="1000" placeholder="Buscar" size="30" type="text" /> &nbsp;
+                <button class="btnprueba"> BUSCAR </button>
+              </div>
+            </form>
+          </div>
+          <!--BUSCADOR VERDE CON CSS     FIN-->
+
+
+
+
+
             <div class="row">
           
               <div class="col-lg-12 stretch-card">
