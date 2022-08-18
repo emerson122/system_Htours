@@ -510,6 +510,7 @@
 
                       </option>
                     </option>
+                  </option>
                 </datalist>
                 </input>
               </label>
@@ -519,14 +520,42 @@
             <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
             </label>-->
             <label class="form-label">
-            Nombre de Cuenta
-            <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+              Nombre de Cuenta
+              <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control" required>
+              <datalist id="lista-cuentas">
+                <option value="Caja">
+                  <option value="Banco">
+                    <option value="Proveedores">
+                      <option value="Capital">
+
+                      </option>
+
+                    </option>
+                  </option>
+                </option>
+                
+              </datalist>
+              </input>
             </label>
+
             <label class="form-label">
             Saldo
-            <input type='number' name='saldo' class="form-control"  required></input> 
+            <input type='text' name='' class="form-control"  required></input> 
             </label>
-            <label> Debe  <input type=radio>   Haber   <input type=radio></label>
+            
+            <br>
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=1>Debe
+                  </label>
+
+                  &nbsp;&nbsp; 
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=2>Haber
+                  </label><hr />
+
+
+
+
             <label class="form-label">
             Fecha
             <input type='date' name='fecha' class="form-control"  required></input> 
@@ -578,6 +607,7 @@
 
                       </option>
                     </option>
+                  </option>
                 </datalist>
                 </input>
               </label>
@@ -587,17 +617,46 @@
             <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
             </label>-->
             <label class="form-label">
-            Nombre de Cuenta
-            <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+              Nombre de Cuenta
+              <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control" required>
+              <datalist id="lista-cuentas">
+                <option value="Caja">
+                  <option value="Banco">
+                    <option value="Proveedores">
+                      <option value="Capital">
+
+                      </option>
+
+                    </option>
+                  </option>
+                </option>
+                
+              </datalist>
+              </input>
             </label>
+
             <label class="form-label">
             Saldo
-            <input type='number' name='saldo' class="form-control"  required></input> 
-          </label>
-            <label> Debe  <input type=radio>   Haber   <input type=radio></label>
+            <input type='text' name='' class="form-control"  required></input> 
+            </label>
             
-            
-            
+
+            <br>
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=1>Debe
+                  </label>
+
+                  &nbsp;&nbsp; 
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=2>Haber
+                  </label><hr />
+                 
+              
+ 
+      
+
+
+
             <label class="form-label">
             Fecha
             <input type='date' name='fecha' class="form-control"  required></input> 

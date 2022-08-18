@@ -521,18 +521,58 @@
             <div class="modal-body">
             <center>
             <form action="" method="post">
-            <label class="form-label">
-            Nombre de Cuenta
-            <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
-            </label>
-            <label class="form-label">
-            Nombre Sub Cuenta
-            <input type='text' name='UNIDADES' class="form-control" required></input> 
-            </label>
+              <label class="form-label">
+                Nombre de Cuenta
+                <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control" required>
+                <datalist id="lista-cuentas">
+                  <option value="Caja">
+                    <option value="Banco">
+                      <option value="Proveedores">
+                        <option value="Capital">
+  
+                        </option>
+  
+                      </option>
+                    </option>
+                  </option>
+                  
+                </datalist>
+                </input>
+              </label>
+              <label class="form-label">
+                Nombre de Sub Cuenta
+                <input type='text' list="lista-subcuentas" name='nombre-periodo' class="form-control" required>
+                <datalist id="lista-subcuentas">
+                  <option value="Efectivo">
+                    <option value="Cheques">
+                      <option value="Depositos">
+                        <option value="Aportacions">
+  
+                        </option>
+  
+                      </option>
+                    </option>
+                  </option>
+                  
+                </datalist>
+                </input>
+              </label>
             <label class="form-label">
             Saldo
-            <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
+            <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
             </label>
+
+            <br>
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=1>Debe
+                  </label>
+
+                  &nbsp;&nbsp; 
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=2>Haber
+                  </label><hr />
+
+
             <label class="form-label">
               Comprobante
               <br>
@@ -575,7 +615,7 @@
            <div class="modal-container">
             <div class="modal fade bd-example-modal-lg" id="dialogo2">
                   <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-             <div class="modal-dialog modal-sm">
+             <div class="modal-dialog modal-md">
              <div class="modal-content">
                   <!-- CABECERA DEL DIALOGO EDITAR -->
              <div class="modal-header">
@@ -586,22 +626,79 @@
              <div class="modal-body">
              <center>
              <form action="" method="post">
-             <label class="form-label">
-             Nombre de Cuenta
-             <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             Nombre Sub Cuenta
-             <input type='text' name='UNIDADES' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             Saldo
-             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
-             <label class="form-label">
-             Fecha
-             <input type='date' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
+              <label class="form-label">
+                Nombre de Cuenta
+                <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control" required>
+                <datalist id="lista-cuentas">
+                  <option value="Caja">
+                    <option value="Banco">
+                      <option value="Proveedores">
+                        <option value="Capital">
+  
+                        </option>
+  
+                      </option>
+                    </option>
+                  </option>
+                  
+                </datalist>
+                </input>
+              </label>
+              <label class="form-label">
+                Nombre de Sub Cuenta
+                <input type='text' list="lista-subcuentas" name='nombre-periodo' class="form-control" required>
+                <datalist id="lista-subcuentas">
+                  <option value="Efectivo">
+                    <option value="Cheques">
+                      <option value="Depositos">
+                        <option value="Aportacions">
+  
+                        </option>
+  
+                      </option>
+                    </option>
+                  </option>
+                  
+                </datalist>
+                </input>
+              </label>
+            <label class="form-label">
+            Saldo
+            <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
+            </label>
+
+            <br>
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=1>Debe
+                  </label>
+
+                  &nbsp;&nbsp; 
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=2>Haber
+                  </label><hr />
+
+
+            <label class="form-label">
+              Comprobante
+              <br>
+              <!--<label id="titulo">subir comprobante</label>-->
+              <!--<div class="mb-3">
+                <!--<label for="formFile" class="form-label">Default file input example</label>-->
+                <!--<input class="form-control" for="titulo" type="file" id="formFile">-->
+              <!--</div>-->
+              <form>
+                <!--<label for="fileUpload">Subir archivo</label>-->
+                <input type="file" id="fileUpload">
+              </form>
+
+
+              <!--<input type="file" name="">-->
+              </label>
+            <label class="form-label">
+            Fecha
+            <input type='date' name='COS PRODUCTO' class="form-control"  required></input> 
+            </label>
+            <br>
          
  
              <a href="" class="btn btn-secondary">Cancelar</a>
