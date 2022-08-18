@@ -248,16 +248,22 @@
              <form action="" method="post">
              <label class="form-label">
               Rol
-             <input type='text' name='Clasificacion' class="form-control text-white" required></input> 
+             <input type='text' name='Clasificacion' class="form-control" required></input> 
              </label>
              <label class="form-label">
              Descripcion
-             <textarea name=""  class="form-control text-white" id="" cols="25" rows="10"></textarea>
-             
+             <input type='number' name='Numero de Cuenta' class="form-control" required></input> 
              </label>
              <label class="form-label">
+             Estado del Rol
+             <input type='number' name='Estado' class="form-control" required></input> 
+            </label>
+            <label class="form-label">
+            <textarea name=""  class="form-control text-white" id="" cols="25" rows="10"></textarea>
+             
+
              </label>
-             <br>
+ 
          
  
              <a href="" class="btn btn-secondary">Cancelar</a>
@@ -297,9 +303,13 @@
               </label>
               <label class="form-label">
               Descripción
-              <textarea name=""  class="form-control text-white" id="" cols="25" rows="10"></textarea>
+              <input type='number' name='DESCRIPCION' class="form-control" required></input> 
               </label>
               <label class="form-label">
+                Estado del Rol
+                <input type='number' name='DESCRIPCION' class="form-control" required></input> 
+                </label>
+                <label class="form-label">
               </label>
           
   
@@ -388,29 +398,35 @@
                           <tr class="text-dark bg-white">
                             <th class="text-dark bg-white">#</th>
                             <th class="text-dark bg-white">Rol</th>
-                             <th class="text-dark bg-white">Descripcion</th>
+                             <th class="text-dark bg-white">Estado</th>
                              <th class="text-dark bg-white">Acciones</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr class="text-white bg-dark">
                             <td>1</td>
-                            <td>Rol1</td>
                             <td>Administrador</td>
+                            <td>Activo</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
 
                           </tr>
                           <tr class="text-white bg-dark">
                             <td>2</td>
-                            <td>Rol2</td>
-                            <td>Usuario</td>
+                            <td>Oficial</td>
+                            <td>Activo</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
 
                           </tr>
                           <tr class="text-white bg-dark">
                             <td>3</td>
-                            <td>Rol3</td>
-                            <td>Usuario</td>
+                            <td>Gerente</td>
+                            <td>Activo</td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
+                          </tr>
+                          <tr class="text-white bg-dark">
+                            <td>4</td>
+                            <td>Subgerente</td>
+                            <td>Activo</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
 
                         </tbody>
