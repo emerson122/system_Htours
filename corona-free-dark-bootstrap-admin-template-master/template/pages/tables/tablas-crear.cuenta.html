@@ -376,7 +376,7 @@
             
             
             <p align="right" valign="baseline">
-           <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="#dialogo1">Mostrar Catalogo de cuentas</button>  
+           <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="">Generar PDF</button>  
             </p>
             <div class="row">
           
@@ -389,11 +389,11 @@
                       <table class="table table-bordered table-contextual">
                         <thead>
                           <tr>
-                            <th class="text-success bg-dark"> # </th>
-                            <th class="text-success bg-dark"> <b>CLASIFICACION</b> </th>
-                            <th class="text-success bg-dark"> <b>NUMERO DE CUENTA</b> </th>
-                            <th class="text-success bg-dark"> </b>NOMRE DE CUENTA</b> </th>
-                            <th class="text-success bg-dark"> </b>ACCIONES</b> </th>
+                            <th class="text-dark bg-white"> # </th>
+                            <th class="text-dark bg-white"> <b>Clasificacion</b> </th>
+                            <th class="text-dark bg-white"> <b>Numero de Cuentas</b> </th>
+                            <th class="text-dark bg-white"> </b>Nombre de Cuentas</b> </th>
+                            <th class="text-dark bg-white"> </b>Acciones</b> </th>
 
                            
                           </tr>
@@ -401,24 +401,24 @@
                         <tbody>
                           <tr class="text-white bg-dark">
                             <td> 1</td>
-                            <td> ACTIVO</td>
-                            <td> 1.1.1 </td>
-                            <td> EFECTIVO </td>
+                            <td> Activo</td>
+                            <td> 1.1 </td>
+                            <td> Caja </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                             
                           </tr>
                           <tr class="text-white bg-dark">
                             <td> 2 </td>
-                            <td> ACTIVO </td>
-                            <td> 2.1.1 </td>
-                            <td> EMPRESA X</td>
+                            <td> Pasivo </td>
+                            <td> 2.1 </td>
+                            <td> Proveedores</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
                             <td> 3 </td>
-                            <td> ACTIVO </td>
-                            <td> 3.1.1 </td>
-                            <td> APORTACIONES</td>
+                            <td> Activo </td>
+                            <td> 3.1 </td>
+                            <td> Capital Social</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           
@@ -437,24 +437,38 @@
              <div class="modal-content">
                   <!-- CABECERA DEL DIALOGO NUEVA-->
              <div class="modal-header">
-             <h4 class="modal-title">Ingresar  Nuevo Registro</h4>
+             <h4 class="modal-title">Ingresar Nueva Cuenta</h4>
                   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
              </div>
                   <!-- CUERPO DEL DIALOGO NUEVA -->
              <div class="modal-body">
              <center>
              <form action="" method="post">
+              <label class="form-label">
+                Clasificacion
+                <input type='text' list="lista-clasificacion" name='nombre-periodo' class="form-control" required>
+                <datalist id="lista-clasificacion">
+                  <option value="Acitvo">
+                    <option value="Pasivo">
+                      <option value="Patrimonio">
+                        <option value="Resultado">
+
+                        </option>
+
+                      </option>
+                    </option>
+                  </option>
+                </datalist>
+                </input>
+              </label>
+
              <label class="form-label">
-             CLASIFICACION
-             <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             NUMERO DE CUENTA
+             Numero de Cuenta
              <input type='text' name='UNIDADES' class="form-control" required></input> 
              </label>
              <label class="form-label">
-             NOMBRE DE CUENTA
-             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
+             Nombre de la Cuenta
+             <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
              </label>
              
  
@@ -485,24 +499,38 @@
                   <div class="modal-content">
                        <!-- CABECERA DEL DIALOGO EDITAR -->
                   <div class="modal-header">
-                  <h4 class="modal-title">Editar Crear Cuentas</h4>
+                  <h4 class="modal-title">Editar Cuenta</h4>
                        <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
                   </div>
                        <!-- CUERPO DEL DIALOGO EDITAR -->
                   <div class="modal-body">
                   <center>
                   <form action="" method="post">
+                    <label class="form-label">
+                      Clasificacion
+                      <input type='text' list="lista-clasificacion" name='nombre-periodo' class="form-control" required>
+                      <datalist id="lista-clasificacion">
+                        <option value="Acitvo">
+                          <option value="Pasivo">
+                            <option value="Patrimonio">
+                              <option value="Resultado">
+      
+                              </option>
+      
+                            </option>
+                          </option>
+                        </option>
+                      </datalist>
+                      </input>
+                    </label>
+      
                   <label class="form-label">
-                  CLASIFICACION
-                  <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
-                  </label>
-                  <label class="form-label">
-                  NUMERO DE CUENTA
+                  Numero de Cuenta
                   <input type='text' name='UNIDADES' class="form-control" required></input> 
                   </label>
                   <label class="form-label">
-                  NOMBRE DE CUENTA
-                  <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
+                  Nombre de la Cuenta
+                  <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
                   </label>
                   
               
