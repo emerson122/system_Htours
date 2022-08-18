@@ -395,8 +395,20 @@
             <div class="modal-body">
             <center>
             <form action="" method="post">
+              <label class="form-label"> 
+                Seleccionar Periodo
+                <select class="form-select" aria-label="Default select example">
+                  <option value=""></option>
+                  <option value="">periodo-2020-ene-1-001</option>
+                  <option value="">periodo-2021-ene-1-002</option>
+                  <option value="">periodo-2022-ene-1-002</option>
+                </select>
+              </label>
+
             <label class="form-label">
-          <input type="text">
+              Estado
+              <input type='text' name='perido' class="form-control" required></input>
+              <button type="button" class="btn btn-success" data-dismiss="modal">Aceptar</button>
             </label>
             </form>
             </div> 
@@ -429,6 +441,7 @@
                     <label for="">Estado</label>
                     
                   <input type='text' name='perido' value="Activo" class="form-control" required></input>
+                  <button class="btn btn-success text-white">Aceptar</button>
                   </label>
              
       
@@ -477,43 +490,31 @@
                             <th class="text-dark bg-white"> # </th>
                             <th class="text-dark bg-white"> Nombre del periodo </th>
                             <th class="text-dark bg-white"> Estado </th>
+                            <th class="text-dark bg-white"> Acciones </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr class="text-white bg-dark">
                             <td> 1 </td>
                             <td>periodo-2020-ene-1-001</td>
-                            <td> Caja </td>
-                            <td><button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo1">Ingresada</button>  
+                            <td><div class="badge badge-outline-warning">Cerrado</div> </td> 
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
                             <td> 2 </td>
-                            <td> 1.1 </td>
-                            <td> Banco </td>
-                            <td><button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo1">Ingresada</button> 
+                            <td>Periodo-2021-ene-1-002 </td>
+                            <td><div class="badge badge-outline-warning">Cerrado</div> </td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
                             <td> 3 </td>
-                            <td> 2.1</td>
-                            <td> Proveedores </td>
-                            <td><button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="#dialogo2">Pendiente</button> 
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td> 4 </td>
-                            <td> 2.1</td>
-                            <td> Clientes </td>
-                            <td><button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo3">Procesada</button></td>
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td> 5 </td>
-                            <td> 3.1 </td>
-                            <td> Capital </td>
-                            <td><button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo3">Procesada</button></td>
+                            <td> Periodo-2022-ene-1-003 </td>
+                            <td><div class="badge badge-outline-success">Activo</div></td>
+                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
+                            <!-- <td><button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="#dialogo2">Pendiente</button>  -->
                           </tr>
                         </tbody>
-                      </table>
-
-                      
+                      </table>   
                     </div>
                   </div>
                 </div>
