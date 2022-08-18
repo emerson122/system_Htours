@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Pregunta usuario</title>
+    <title>Reporte Estado de Resultado</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -16,7 +16,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
-   <link rel="icon" href="../../assets/images/HTOURS.png" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
   <body>
     <div class="container-scroller">
@@ -94,30 +94,31 @@
                 <span class="menu-icon">
                   <i class="mdi mdi-laptop"></i>
                 </span>
-                <span class="menu-title">Seguridad</span>
+                <span class="menu-title">Cuentas</span>
                 <i class="menu-arrow"></i>
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="Usuarios.html">Usuarios</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="Roles.html">Rol usuario</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="Preguntas_usuario.html">Preguntas_usuario</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="Parametros.html">Parametros</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="tablas-crear.cuenta.html">Crear Cuentas</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="tablas-subcuentas.html">Crear Subcuentas</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="libro_diario.html">Libro Diario</a></li>
                   </ul>
               </div>
             </li>
             <!-- periodo  -->
             <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#preguntas usuario" aria-expanded="false" aria-controls="ui-basic">
+              <a class="nav-link" data-toggle="collapse" href="#periodo-contable" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-icon">
                   <i class="mdi mdi-table-large"></i>
                 </span>
-                <span class="menu-title">pregunta usuario</span>
+                <span class="menu-title">Periodo</span>
                 <i class="menu-arrow"></i>
               </a>
-              <div class="collapse" id="preguntas usuario">
+              <div class="collapse" id="periodo-contable">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="Pregunta_Usuario.html">preguntas usuario</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="tablas-periodo.html">Periodo/Libro Mayor</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="Balance-GL.html">Balance General</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="Consultas-estadoDeResultados.html">Estado de Resultado</a></li>
                   </ul>
               </div>
             </li>
@@ -128,7 +129,7 @@
                 <span class="menu-icon">
                   <i class="mdi mdi-file-document-box"></i>
                 </span>
-                <span class="menu-title">Entrada</span>
+                <span class="menu-title">Manteniminento</span>
                 <i class="menu-arrow"></i>
               </a>
               <div class="collapse" id="mantenimiento">
@@ -142,6 +143,7 @@
             </li>
             
           
+            <!-- Seguridad  -->
             <li class="nav-item menu-items">
               <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-icon">
@@ -152,20 +154,16 @@
               </a>
               <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Usuarios </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Roles</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Permisos </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> bitacoras </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registrar usuario </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Parametro </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Preguntas Usuario </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Preguntas </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Historial Contraseña </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Objetos </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Usuarios </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Roles</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Permisos </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> bitacoras </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registrar usuario </a></li>
                 </ul>
               </div>
             </li>
+
             <!-- Menu Modulos Reportes editable -->
             <li class="nav-item menu-items">
               <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
@@ -179,10 +177,11 @@
                 <ul class="nav flex-column sub-menu">
                  <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_LM.html">Reporte Libro Mayor</a></li>
                  <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_ER.html">Reporte Estado de Resultado</a></li>
-                 <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="TBL_Reporte_BG.html">Reporte Balance General</a></li>
                 </ul>
               </div>
             </li>
+
             <li class="nav-item menu-items">
               <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
                 <span class="menu-icon">
@@ -391,203 +390,298 @@
             </div>
           </nav>
           <!-- fin de menu -->
-          <!-- INICIO MODAL PARA NUEVA  -->
-          <div class="modal-container">
-            <div class="modal fade bd-example-modal-lg" id="dialogo1">
-                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-             <div class="modal-dialog modal-sm">
-             <div class="modal-content">
-                  <!-- CABECERA DEL DIALOGO NUEVA-->
-             <div class="modal-header">
-             <h4 class="modal-title">Ingresar Preguntas Usuario</h4>
-                  <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
-             </div>
-                  <!-- CUERPO DEL DIALOGO NUEVA -->
-             <div class="modal-body">
-             <center>
-             <form action="" method="post">
-             <label class="form-label">
-              Id Usuario
-             <input type='number' name='Clasificacion' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             Respuesta
-             <input type='text' name='respuesta' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             </label>
- 
-         
- 
-             <a href="" class="btn btn-secondary">Cancelar</a>
-             <button type="submit" class="btn btn-primary">Registrar </button>
-             </form>
-             </div> 
-             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-             </center>
-             </div>
-             </div>
-             </div>
-             </div>
-                 <!-- FIN DE MODAL PARA NUEVA  -->
- 
- 
- 
-             
-               
-                   <!-- INICIO MODAL PARA EDITAR  -->
-            <div class="modal-container">
-             <div class="modal fade bd-example-modal-lg" id="dialogo2">
-                   <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-              <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                   <!-- CABECERA DEL DIALOGO EDITAR -->
-              <div class="modal-header">
-              <h4 class="modal-title">Editar Preguntas Usuario</h4>
-                   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
-              </div>
-                   <!-- CUERPO DEL DIALOGO EDITAR -->
-              <div class="modal-body">
-              <center>
-              <form action="" method="post">
-              <label class="form-label">
-              Id Usuario
-              <input type='number' name='ID USUARIO' class="form-control" required></input> 
-              </label>
-              <label class="form-label">
-              Respuesta
-              <input type='text' name='RESPUESTA' class="form-control" required></input> 
-              </label>
-              <label class="form-label">
-              </label>
-          
-  
-              <a href="" class="btn btn-secondary">Cancelar</a>
-              <button type="submit" class="btn btn-primary">Registrar </button>
-              </form>
-              </div> 
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-              </center>
-              </div>
-              </div>
-              </div>
-              </div>
-                  <!-- FIN DE MODAL PARA EDITAR  -->
- 
-              
- 
- 
-             
-               
-                   <!-- INICIO MODAL PARA BORRAR  -->
-            <div class="modal-container">
-             <div class="modal fade bd-example-modal-lg" id="dialogo3">
-                   <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
-              <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                   <!-- CABECERA DEL DIALOGO EDITAR -->
-              <div class="modal-header">
-              <h4 class="modal-title">Eliminar preguntas usuario</h4>
-                   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
-              </div>
-                   <!-- CUERPO DEL DIALOGO BORRAR -->
-              <div class="modal-body">
-              <center>
-              <form action="" method="post">
-              <label class="form-label">
-              ¿ Desea Eliminar la Transaccion ?
-               
-              </label>
-              
-          
-  
-              <a href="" class="btn btn btn-primary">SI</a>
-              <a href="" class="btn btn-secondary">NO</a>
-              
-              </form>
-              </div> 
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-              </center>
-              </div>
-              </div>
-              </div>
-              </div>
-                  <!-- FIN DE MODAL PARA BORRAR  -->
 
-        <!-- partial -->
-        <div class="main-panel">
-          <div class="content-wrapper">
-            <center> <h1>Preguntas Usuario H Tours Honduras</h1> </center>
-            <h5>________________________________________________________________________________________________________________</h5>
-            <!-- <ul class="nav nav-pills nav-stacked">
-              <li class="active"><a href="#"></a></li>
-            </ul> -->
-            <p align="right" valign="baseline">
-              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button>
+ <!-- INICIO MODAL PARA NUEVA  REPORTE ER -->
+ <div class="modal-container">
+  <div class="modal fade bd-example-modal-lg" id="dialogo1">
+        <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+   <div class="modal-dialog modal-md">
+   <div class="modal-content">
+        <!-- CABECERA DEL DIALOGO NUEVA-->
+   <div class="modal-header">
+   <h4 class="modal-title"> <center> Generar un Nuevo Reporte</center></h4>
+   <button align="right" type="button" class="btn btn-danger" data-dismiss="modal">X</button>     
+   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+   </div>
+        <!-- CUERPO DEL DIALOGO NUEVA -->
+   <div class="modal-body">
+   <center>
+   <form action="" method="post">
+    <label class="form-label">
+      Ingrese el Nombre: <input type='text' name='namereportlm' class="form-control bg-white" required></input>
+    </label>
+    <br><br>
+    <label class="form-label">
+      Detalle de generar reporte:
+      <input type='text' name='namereportlm' class="form-control bg-white" required></input>
+    </label>
+    <br><br>
+    <p>
+    <label class="form-label">
+      Desde:
+      <input type='date' name='fec-inic' class="form-control" required></input>
+    </label>
+    
+    <label class="form-label">
+      Hasta:
+      <input type='date' name='fec-inic' class="form-control" required></input>
+    </label></p>
+    <br>
+   <a href="" class="btn btn-danger">Cancelar</a>
+   <button type="submit" class="btn btn-success">Aceptar</button>
+   </form>
+   </div> 
+   
+   </center>
+   </div>
+   </div>
+   </div>
+   </div>
+       <!-- FIN DE MODAL PARA NUEVA  -->
+
+        
+        <!-- CODIGO INTERFAZ REPORTES ER -->
+        <div class="main-panel" >     
+          
+          <div class="content-wrapper" class="panel panel-default" style="background-color:rgba(148, 0, 148, 0.911);">
+            <div class="panel-body" >
+              <center> <h1>Reporte Estado de Resultado</h1> </center>
+            </div>
+          </div>
+          <div class="content-wrapper" style="background-color:rgba(68, 0, 82, 0.945);">
+            <!-- CODIGO DE LOS GRUPOS DE SELECCION EN TABLAS-->
+                    
+        <table align="center"> <!-- TABLA PRINCIPAL -->
+          <tr>
+          <td>
+            <!-- TABLA SECUNDARIA 1 COLUMNA -->
+            <table cellspacing="70" cellpadding="10" border="3" bordercolor="C100BB" rules="none" bgcolor="7C0381">
+              <tr>
+                <td align="center">
+                  <center>
+                   <h3>Fecha Desde:</h3>
+                  </center>
+                </td>
+                <td>
+                  <center>        
+                      <label class="form-label">
+                      <input type='date' name='fec-inic' class="form-control" required></input>
+                      </label>
+                   </center>
+                </td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <center><h3>Feha Hasta:</h3>
+                  </center>         
+                </td>
+              <td>
+                <center>       
+                  <label class="form-label">
+                  <input type='date' name='fec-inic' class="form-control" required></input>
+                  </label>
+                 </center>
+              </td>
+              </tr>
+            </table>
+          </td>
+          <!-- ESPACIO DE TABLAS -->
+          <td width="13%"></td>
+          <!-- TERCERA TABLA 2 COLUMNA -->
+          <td>
+            <table  table-responsive border="3" cellspacing="70" cellpadding="10" bordercolor="C100BB" rules="none" bgcolor="7C0381">
+              <tr>
+                <td>
+                  <center>
+                    <br>
+                    <h3>Nombre del Reporte:</h3>
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center>
+                    <form action="../../form-result.php" method="post" target="_blank">
+                      <input type="search" name="busquedamodelos" list="listamodelos">
+                      <input type="submit" value="Buscar">
+                  </form> 
+                  <datalist id="listamodelos">
+                  
+                    <option value="Libro_Estado_Resultado">
+                  
+                    <option value="Cuentas_del_Estado_Resultado">
+                  
+                    <option value="Cuenta_Especifica">
+                  
+                  </datalist>
+                  </center>         
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        </table>
+
+      <table align="center" table-responsive cellspacing="15" cellpadding="15">
+        <tr><td></td>
+          <td></td>
+          <td ></td>
+          <td ></td>
+          <td ></td>
+          <td ></td>
+        </tr>
+        <tr> 
+          <td>
+            <p align="left" valign="baseline">            
+             <a type="button"  class="btn btn-outline-primary" href="javascript:window.print();">📑 Generar PDF</a>
             </p>
-            
-            <ul class="nav nav-pills nav-stacked">
-              <li class="active"><a href="#"></a></li>
-              </ul>
-              
-              
-            
-              
-            
-           
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <center><h4 class="card-title">Registros de Preguntas a Usuarios</h4></center>
-                    <!-- <p class="card-description"> Add class <code>.table-striped</code> -->
-                    </p>
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-contextual">
-                        <thead>
-                          <tr class="text-dark bg-white">
-                            <th class="text-dark bg-white">#</th>
-                            <th class="text-dark bg-white">Id Usuario</th>
-                             <th class="text-dark bg-white">Respuesta</th>
-                             <th class="text-dark bg-white">Acciones</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="text-white bg-dark">
-                            <td>1</td>
-                            <td>0801199925</td>
-                            <td>Respuesta1</td>
-                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
-
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td>2</td>
-                            <td>080119960221</td>
-                            <td>Respuesta2</td>
-                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
-
-                          </tr>
-                          <tr class="text-white bg-dark">
-                            <td>3</td>
-                            <td>080119951245</td>
-                            <td>Respuesta3</td>
-                            <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td></button> </td>
-
-                        </tbody>
-                      </table>
+          </td>
+          <td ></td>
+          <td ></td>
+          <td>
+            <p align="center" valign="baseline">
+              <button type="button"  class="btn btn-outline-success"  data-toggle="modal" data-target="#dialogo1"><div class="spinner-grow spinner-grow-sm"></div>  Nuevo</button>
+            </p>
+          </td>
+          <td ></td>
+          <td ></td>
+          <td>
+            <p align="right" valign="baseline">
+             <button type="button"  class="btn btn-outline-info"  data-toggle="modal" data-target="#dialogo11" ><div class="spinner-grow spinner-grow-sm"></div>   Previsualizar</button>
+            </p>
+          </td>
+        </tr>
+      </table>
+        <!-- FIN TABLA PRINCIPAL --> 
+          
+          <!-- MUESTRA LAS TABLAS Y LA INFORMACION -->        
+           <div class="row">
+          
+            <div class="col-lg-12 stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title"> <center>Reportes realizados</center></h4>
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered table-contextual table-dark table-striped table-sm">
+                      <thead>
+                        <tr>
+                          
+                          <th class="text-dark bg-white">N°</th>
+                          <th class="text-dark bg-white"> Nombre del Reporte</th>
+                          <th class="text-dark bg-white"> Fecha de Registro</th>
+                          <th class="text-dark bg-white"> Acciones  </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr> <!-- class="text-white bg-dark" --> 
+                          <td> 1</td>
+                          <td>ReporteER_Estado Resultado</td>
+                          <td>08 Agosto 2022</td>
+                          <td align="center">
+                            <button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo2">Editar Nombre</button></td>  
+                        </tr>
+                        <tr><!-- class="text-white bg-dark" -->
+                          <td> 2 </td>
+                          <td>ReporteER_del Estado R.</td>
+                          <td>08 Agosto 2022</td>
+                          <td align="center">
+                            <button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo2">Editar Nombre</button></td>
+                        </tr>
+                        <tr>
+                          <td> 3 </td>
+                          <td>ReporteER_Cuenta Especifica</td>
+                          <td>08 Agosto 2022</td>
+                          <td align="center">
+                            <button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo2">Editar Nombre</button></td>
+                        </tr>                       
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>  
+               <!-- INICIO MODAL PARA PREVISUALIZAR  -->
+               <div class="modal-container">
+                <div class="modal fade bd-example-modal-lg" id="dialogo11">
+                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                  <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                      <!-- CABECERA DEL DIALOGO PREVISUALIZAR-->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Previsualización de Reporte</h4>
+                        <button align="right" type="button" class="btn btn-danger" data-dismiss="modal">X</button>
+                        <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                      </div>
+                      <!-- CUERPO DEL DIALOGO PREVISUALIZAR -->
+                      <div class="modal-body">
+                        <center>
+                          <form action="" method="post">
+                            <img class="img" width="400" height="300"  src="../../assets/images/ER.png" alt="">
+                            <br>
+                            <br>
+                            <a href="" class="btn btn-danger">Cerrar Vista</a>
+                            <button type="submit" class="btn btn-primary">Repotorte Anterior</button>
+                          </form>
+                      </div>
+                      </center>
                     </div>
                   </div>
                 </div>
               </div>
-              
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+              <!-- FIN DE MODAL PARA PREVISUALIZAR  -->
+              <!-- INICIO MODAL PARA EDITAR  -->
+              <div class="modal-container">
+                <div class="modal fade bd-example-modal-lg" id="dialogo2">
+                      <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                 <div class="modal-dialog modal-md">
+                 <div class="modal-content">
+                      <!-- CABECERA DEL DIALOGO EDITAR -->
+                 <div class="modal-header">
+                 <h4 class="modal-title">Editar Nombre de Reporte</h4>
+                 <button align="right" type="button" class="btn btn-danger" data-dismiss="modal">X</button>
+                      <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                 </div>
+                      <!-- CUERPO DEL DIALOGO EDITAR -->
+                 <div class="modal-body">
+                   <center>
+                     <Label>Selecione el reporte:</Label>
+                     <br>
+                     <form action="" method="post">
+                     <select name="" id="">
+                      <option value="" selected></option>
+                      <option value="">ReporteER_Estado_Resultado</option>
+                      <option value="">ReporteER_del_Estado_R</option>
+                      <option value="">ReporteER_Cuenta_Especifica</option>
+                      </select>
+                      <br>
+                      <br>
+                      <label class="form-label">
+                       Ingrese el Nuevo Nombre:
+                       <input type='text' name='namereportlm' class="form-control bg-white" required></input>
+                     </label>
+                     <br>
+                     <br>
+                     <a href="" class="btn btn-danger">Cancelar</a>
+                     <button type="submit" class="btn btn-success">Aceptar</button>
+                     </form>
+                     </div> 
+                   </center>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                     <!-- FIN DE MODAL PARA EDITAR  -->   
             </div>
-          </footer>
-          <!-- partial -->
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+          </div>
+        </footer>
+        <!-- partial -->
         </div>
         <!-- main-panel ends -->
       </div>

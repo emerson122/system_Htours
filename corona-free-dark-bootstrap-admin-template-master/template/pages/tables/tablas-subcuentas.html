@@ -16,7 +16,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+   <link rel="icon" href="../../assets/images/HTOURS.png" />
   </head>
   <body>
     <div class="container-scroller">
@@ -163,22 +163,22 @@
         </div>
       </li>
        <!-- Menu Modulos Reportes editable -->
-            <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-icon">
-                  <i class="mdi mdi-file-document-box"></i>
-                </span>
-                <span class="menu-title">Reportes</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="Reportes">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="tablas-pendientes">Reporte Libro Mayor</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="tablas-peendientes">Reporte Estado de Resultado</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
-                </ul>
-              </div>
-            </li>
+       <li class="nav-item menu-items">
+        <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
+          <span class="menu-icon">
+           <i class="mdi mdi-file-document-box"></i>
+          </span>
+          <span class="menu-title">Reportes</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="Reportes">
+          <ul class="nav flex-column sub-menu">
+           <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_LM.html">Reporte Libro Mayor</a></li>
+           <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_ER.html">Reporte Estado de Resultado</a></li>
+           <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
+          </ul>
+        </div>
+      </li>
     </ul>
   </nav>
 
@@ -392,7 +392,7 @@
               </nav> -->
             </div>
             <p align="right" valign="baseline">
-              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button>
+              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="">Generar PDF</button> 
             </p>
             <div class="row">
           
@@ -405,12 +405,12 @@
                       <table class="table table-bordered table-contextual">
                         <thead>
                           <tr>
-                            <th class="text-success bg-dark"> # </th>
-                            <th class="text-success bg-dark"> <b>CLASIFICACION</b> </th>
-                            <th class="text-success bg-dark"> <b>NOMBRE DE CUENTA</b> </th>
-                            <th class="text-success bg-dark"> </b>NUMERO DE SUBCUENTA</b> </th>
-                            <th class="text-success bg-dark"> </b>NOMBRE DE SUBCUENTA</b> </th>
-                            <th class="text-success bg-dark"> </b>ACCIONES</b> </th>
+                            <th class="text-dark bg-white"> # </th>
+                            <th class="text-dark bg-white"> <b>Clasificacion</b> </th>
+                            <th class="text-dark bg-white"> <b>Nombre de Cuentas</b> </th>
+                            <th class="text-dark bg-white"> </b>Numero de Sub Cuentas</b> </th>
+                            <th class="text-dark bg-white"> </b>Nombre de Sub Cuentas</b> </th>
+                            <th class="text-dark bg-white"> </b>Acciones</b> </th>
 
                            
                           </tr>
@@ -418,27 +418,27 @@
                         <tbody>
                           <tr class="text-white bg-dark">
                             <td> 1</td>
-                            <td> ACTIVO</td>
-                            <td> CAJA</td>
+                            <td> Activo</td>
+                            <td> Caja</td>
                             <td> 1.1.1 </td>
-                            <td> EFECTIVO</td>
+                            <td> Efectivo</td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                             
                           </tr>
                           <tr class="text-white bg-dark">
                             <td> 2 </td>
-                            <td> PASIVO </td>
-                            <td> PROVEEDORES </td>
+                            <td> Pasivo </td>
+                            <td> Priveedores </td>
                             <td> 2.1.1</td>
-                            <td> EMPRESA X </td>
+                            <td> Empresa x </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
                             <td> 3 </td>
-                            <td> PATRIMONIO </td>
-                            <td> CAPITAL </td>
+                            <td> Patrimoniop </td>
+                            <td> Capital Social </td>
                             <td> 3.1.1</td>
-                            <td> APORTACIONES </td>
+                            <td> Aportaciones </td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           
@@ -457,7 +457,7 @@
              <div class="modal-content">
                   <!-- CABECERA DEL DIALOGO NUEVA-->
              <div class="modal-header">
-             <h4 class="modal-title">Ingresar  Nuevo Registro de SubCuenta</h4>
+             <h4 class="modal-title">Ingresar Nueva Sub Cuenta</h4>
                   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
              </div>
                   <!-- CUERPO DEL DIALOGO NUEVA -->
@@ -465,19 +465,36 @@
              <center>
              <form action="" method="post">
              <label class="form-label">
-             CLASIFICACION
+             Clasificacion
              <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
              </label>
-             <label class="form-Select">
-             NOMBRE  DE CUENTA
-             <input type='text' name='UNIDADES' class="form-control" required></input> 
+
+
+             <label class="form-label">
+              Nombre de Cuenta
+              <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control" required>
+              <datalist id="lista-cuentas">
+                <option value="Caja">
+                  <option value="Banco">
+                    <option value="Proveedores">
+                      <option value="Capital">
+
+                      </option>
+
+                    </option>
+                  </option>
+                </option>
+                
+              </datalist>
+              </input>
+            </label>
+
+             <label class="form-label">
+             Numero de la Cuenta
+             <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
              </label>
              <label class="form-label">
-             NUMERO DE CUENTA
-             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
-             <label class="form-label">
-              NOMBRE  DE SUBCUENTA
+              Nombre de la Sub Cuenta
               <input type='text' name='COS PRODUCTO' class="form-control"  required></input> 
               </label>
              

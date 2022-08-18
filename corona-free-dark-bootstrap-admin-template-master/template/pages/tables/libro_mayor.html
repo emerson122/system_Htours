@@ -44,7 +44,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+   <link rel="icon" href="../../assets/images/HTOURS.png" />
   </head>
   <body>
     <div class="container-scroller">
@@ -202,22 +202,22 @@
             </div>
           </li>
            <!-- Menu Modulos Reportes editable -->
-            <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-icon">
-                  <i class="mdi mdi-file-document-box"></i>
-                </span>
-                <span class="menu-title">Reportes</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="Reportes">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="tablas-pendientes">Reporte Libro Mayor</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="tablas-peendientes">Reporte Estado de Resultado</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
-                </ul>
-              </div>
-            </li>
+           <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+               <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Reportes</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="Reportes">
+              <ul class="nav flex-column sub-menu">
+               <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_LM.html">Reporte Libro Mayor</a></li>
+               <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_ER.html">Reporte Estado de Resultado</a></li>
+               <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </nav>
 
@@ -497,22 +497,65 @@
             <div class="modal-body">
             <center>
             <form action="" method="post">
-            <label class="form-label">
-            Clasificacion
-            <input type='text' name='Clasificacion' class="form-control" required></input> 
-            </label>
-            <label class="form-label">
+              <label class="form-label">
+                Clasificacion
+                <input type='text' list="lista-clasificacion" name='nombre-periodo' class="form-control" required>
+                <datalist id="lista-clasificacion">
+                  <option value="Acitvo">
+                    <option value="Pasivo">
+                      <option value="Patrimonio">
+                        <option value="Resultado">
+
+                        </option>
+
+                      </option>
+                    </option>
+                  </option>
+                </datalist>
+                </input>
+              </label>
+
+            <!--<label class="form-label">
             Numero de Cuenta
             <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
-            </label>
+            </label>-->
             <label class="form-label">
-            Nombre de Cuenta
-            <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+              Nombre de Cuenta
+              <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control" required>
+              <datalist id="lista-cuentas">
+                <option value="Caja">
+                  <option value="Banco">
+                    <option value="Proveedores">
+                      <option value="Capital">
+
+                      </option>
+
+                    </option>
+                  </option>
+                </option>
+                
+              </datalist>
+              </input>
             </label>
+
             <label class="form-label">
             Saldo
-            <input type='number' name='saldo' class="form-control"  required></input> 
+            <input type='text' name='' class="form-control"  required></input> 
             </label>
+
+            <br>
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=1>Debe
+                  </label>
+
+                  &nbsp;&nbsp; 
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=2>Haber
+                  </label><hr />
+
+
+
+
             <label class="form-label">
             Fecha
             <input type='date' name='fecha' class="form-control"  required></input> 
@@ -551,23 +594,74 @@
              <div class="modal-body">
              <center>
              <form action="" method="post">
-             <label class="form-label">
-             Numero de Sub Cuenta
-             <input type='text' name='NOM PRODUCTO' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             Nombre Sub Cuenta
-             <input type='text' name='UNIDADES' class="form-control" required></input> 
-             </label>
-             <label class="form-label">
-             Saldo
-             <input type='number' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
-             <label class="form-label">
-             Fecha
-             <input type='date' name='COS PRODUCTO' class="form-control"  required></input> 
-             </label>
-         
+              <label class="form-label">
+                Clasificacion
+                <input type='text' list="lista-clasificacion" name='nombre-periodo' class="form-control" required>
+                <datalist id="lista-clasificacion">
+                  <option value="Acitvo">
+                    <option value="Pasivo">
+                      <option value="Patrimonio">
+                        <option value="Resultado">
+
+                        </option>
+
+                      </option>
+                    </option>
+                  </option>
+                </datalist>
+                </input>
+              </label>
+
+            <!--<label class="form-label">
+            Numero de Cuenta
+            <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
+            </label>-->
+            <label class="form-label">
+              Nombre de Cuenta
+              <input type='text' list="lista-cuentas" name='nombre-periodo' class="form-control" required>
+              <datalist id="lista-cuentas">
+                <option value="Caja">
+                  <option value="Banco">
+                    <option value="Proveedores">
+                      <option value="Capital">
+
+                      </option>
+
+                    </option>
+                  </option>
+                </option>
+                
+              </datalist>
+              </input>
+            </label>
+
+            <label class="form-label">
+            Saldo
+            <input type='text' name='' class="form-control"  required></input> 
+            </label>
+            
+
+            <br>
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=1>Debe
+                  </label>
+
+                  &nbsp;&nbsp; 
+                  <label class="radio-inline">
+                      <input type="radio" name="Tipo" value=2>Haber
+                  </label><hr />
+                 
+              
+ 
+      
+
+
+
+            <label class="form-label">
+            Fecha
+            <input type='date' name='fecha' class="form-control"  required></input> 
+            </label>
+
  
              <a href="" class="btn btn-secondary">Cancelar</a>
              <button type="submit" class="btn btn-primary">Registrar </button>
@@ -630,7 +724,7 @@
 </nav>
 
             <p align="right" valign="baseline">
-              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <a type="button"  class="btn btn-success" href="javascript:window.print();">Generar PDF</a>
+              <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button> <a type="button"  class="btn btn-warning" href="javascript:window.print();">Generar PDF</a>
             </p>
             <div class="row">
           
