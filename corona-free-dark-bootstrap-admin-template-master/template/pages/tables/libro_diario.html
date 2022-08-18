@@ -69,12 +69,8 @@
 
     <div class="container-scroller">
        <!-- partial:../../partials/_sidebar.html -->
-    <!-- inicio de todo el menu -->
-
-    <elemento class="oculto-impresion"><!-- AQUI EMPIEZA PARA OCULTAR EN LA IMPRESION INICIO111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111------->
-
-
-    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+     <!-- inicio de todo el menu -->
+     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
         <a class="sidebar-brand brand-logo" href="../../index.html"><H3><font color="white"> System H Tours</font></H3></a>
         <a class="sidebar-brand brand-logo-mini" href="../../index.html"><H3><font color="white">SHT</font></H3></a>
@@ -146,14 +142,14 @@
             <span class="menu-icon">
               <i class="mdi mdi-laptop"></i>
             </span>
-            <span class="menu-title">Cuentas</span>
+            <span class="menu-title">Modulo de Cuentas</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="ui-basic">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="tablas-crear.cuenta.html">Crear Cuentas</a></li>
-                <li class="nav-item"> <a class="nav-link" href="tablas-subcuentas.html">Crear Subcuentas</a></li>
-                <li class="nav-item"> <a class="nav-link" href="libro_diario.html">Libro Diario</a></li>
+              <li class="nav-item"> <a class="nav-link" href="tablas-crear.cuenta.html">Gestion de cuentas</a></li>
+                <li class="nav-item"> <a class="nav-link" href="tablas-subcuentas.html">Gestion de subcuentas</a></li>
+                
               </ul>
           </div>
         </li>
@@ -163,14 +159,15 @@
             <span class="menu-icon">
               <i class="mdi mdi-table-large"></i>
             </span>
-            <span class="menu-title">Periodo</span>
+            <span class="menu-title">Modulo Contable</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="periodo-contable">
             <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="libro_diario.html">Libro Diario</a></li>
               <li class="nav-item"> <a class="nav-link" href="tablas-periodo.html">Periodo/Libro Mayor</a></li>
-              <li class="nav-item"> <a class="nav-link" href="Balance-GL.html">Balance General</a></li>
-              <li class="nav-item"> <a class="nav-link" href="Consultas-estadoDeResultados.html">Estado de Resultado</a></li>
+              <li class="nav-item"> <a class="nav-link" href="Balance-GL.html">Reporte Balance General</a></li>
+              <li class="nav-item"> <a class="nav-link" href="Consultas-estadoDeResultados.html">Reporte Estado de Resultado</a></li>
               </ul>
           </div>
         </li>
@@ -190,11 +187,12 @@
               <li class="nav-item"> <a class="nav-link" href="estado-cuentas.html">Estado de cuentas</a></li>
               <li class="nav-item"> <a class="nav-link" href="estado-sub-cuentas.html">Estado de subcuentas</a></li>
               <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Estado de periodo</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Objetos </a></li>
             </ul>
           </div>
         </li>
         
-      
+      <!-- Seguridad  -->
         <li class="nav-item menu-items">
           <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
             <span class="menu-icon">
@@ -206,68 +204,28 @@
           <div class="collapse" id="auth">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Usuarios </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Roles</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html">  Roles</a></li>
               <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Permisos </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> bitacoras </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registrar usuario </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html">  Bitacoras </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html">  ParametroS </a></li>
             </ul>
           </div>
-        </li>
-            <!-- Menu Modulos Reportes editable -->
-            <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-icon">
-                 <i class="mdi mdi-file-document-box"></i>
-                </span>
-                <span class="menu-title">Reportes</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="Reportes">
-                <ul class="nav flex-column sub-menu">
-                 <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_LM.html">Reporte Libro Mayor</a></li>
-                 <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_ER.html">Reporte Estado de Resultado</a></li>
-                 <li class="nav-item"> <a class="nav-link" href="tablas pendientes">Reporte Balance General</a></li>
-                </ul>
-              </div>
-            </li>
+        </li>  
       </ul>
     </nav>
 
     <!-- inicio de menu  -->
-
-  </elemento><!-- AQUI SE QUITA PARA IMPRIMIR ESTO NO SALDRA FIN-------11111111111111111111111111111111111111111111111111111111111111111111111111111111111>
-
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:../../partials/_navbar.html -->
-
-
-      
-
- 
       <nav class="navbar p-0 fixed-top d-flex flex-row">
-
-        <elemento class="oculto-impresion"> <!-- AQUI EMPIEZA PARA OCULTAR EN LA IMPRESION INICIO------------2222222222222222222222222222222222222222222222222222222-->
-       
-       
-          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-             <a class="navbar-brand brand-logo-mini" href="../../index.html"><H3><font color="white">SHT</font></H3></a>  
+        <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><H3><font color="white">SHT</font></H3></a>
         </div>
-
-
-
-      </elemento><!-- AQUI SE QUITA PARA IMPRIMIR ESTO NO SALDRA FIN-22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222--> 
-
-
-
         <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
           </button>
-
-        
-
           <!-- <ul class="navbar-nav w-100">
             <li class="nav-item w-100">
               <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
@@ -363,13 +321,7 @@
                 <p class="p-3 mb-0 text-center">4 new messages</p>
               </div>
             </li>
-
-
-            
             <li class="nav-item dropdown border-left">
-
-
-
               <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
                 <i class="mdi mdi-bell"></i>
                 <span class="count bg-danger"></span>
@@ -417,27 +369,10 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-
-             
-
               <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                 <div class="navbar-profile">
-
-                  <elemento class="oculto-impresion"> <!-- AQUI EMPIEZA PARA OCULTAR EN LA IMPRESION INICIO--333333333333333333333333333333333333333333333333333333333333-->
-
-
                   <img class="img-xs rounded-circle" src="../../assets/images/faces/usuario1.png" alt="">
-                </elemento><!-- AQUI SE QUITA PARA IMPRIMIR ESTO NO SALDRA FIN---33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
-
-
-                  <elemento class="oculto-impresion"> <!-- AQUI EMPIEZA PARA OCULTAR EN LA IMPRESION INICIO--444444444444444444444444444444444444444444444444444444444444444-->
-
                   <p class="mb-0 d-none d-sm-block navbar-profile-name">Usuario1</p>
-                </elemento><!-- AQUI SE QUITA PARA IMPRIMIR ESTO NO SALDRA FIN---444444444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
-
-
-
-                
                   <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                 </div>
               </a>
@@ -475,10 +410,6 @@
           </button>
         </div>
       </nav>
-
-
-
-      <!-- fin de menu -->
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
