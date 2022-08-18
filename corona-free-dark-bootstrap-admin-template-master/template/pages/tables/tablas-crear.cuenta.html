@@ -315,25 +315,20 @@
              <form action="" method="post">
               <label class="form-label">
                 Clasificacion
-                <input type='text' list="lista-clasificacion"  name='nombre-periodo' class="form-control text-white" required>
-                <datalist id="lista-clasificacion">
-                  <option value="Activo">
-                    <option value="Pasivo">
-                      <option value="Patrimonio">
-                        <option value="Resultado">
+               
+                <select class="form-control text-white" name="" id="" required>
+                  <option value=""></option>
+                  <option value=""> Activo</option>
+                  <option value=""> Pasivo</option>
+                      <option value="">Patrimonio </option>
+                        <option value="">Resultado </option>
 
-                        </option>
-
-                      </option>
-                    </option>
-                  </option>
-                </datalist>
-                </input>
+                        </select>
               </label>
 
              <label class="form-label">
              Numero de Cuenta
-             <input type='text' name='UNIDADES' class="form-control text-white" required></input> 
+             <input type='number' name='UNIDADES' min="0" class="form-control text-white"  maxlength="3" required></input> 
              </label>
              <label class="form-label">
              Nombre de la Cuenta
@@ -377,30 +372,26 @@
                   <form action="" method="post">
                     <label class="form-label">
                       Clasificacion
-                      <input type='text' list="lista-clasificacion" name='nombre-periodo' class="form-control text-white" required>
-                      <datalist id="lista-clasificacion">
-                        <option value="Acitvo">
-                          <option value="Pasivo">
-                            <option value="Patrimonio">
-                              <option value="Resultado">
+                     
+                      <select class="form-control text-white" name="" id="" required>
+                        <option value=""></option>
+                        <option value=""> Activo</option>
+                        <option value=""> Pasivo</option>
+                            <option value="">Patrimonio </option>
+                              <option value="">Resultado </option>
       
-                              </option>
-      
-                            </option>
-                          </option>
-                        </option>
-                      </datalist>
-                      </input>
+                              </select>
                     </label>
       
-                  <label class="form-label">
-                  Numero de Cuenta
-                  <input type='text' name='UNIDADES' class="form-control text-white" required></input> 
-                  </label>
-                  <label class="form-label">
-                  Nombre de la Cuenta
-                  <input type='text' name='COS PRODUCTO' class="form-control text-white"  required></input> 
-                  </label>
+                   <label class="form-label">
+                   Numero de Cuenta
+                   <input type='number' name='UNIDADES' class="form-control text-white"  maxlength="3" required></input> 
+                   </label>
+                   <label class="form-label">
+                   Nombre de la Cuenta
+                   <input type='text' name='COS PRODUCTO' min="0" class="form-control text-white"  required></input> 
+                   </label>
+                   
                   
               
       
