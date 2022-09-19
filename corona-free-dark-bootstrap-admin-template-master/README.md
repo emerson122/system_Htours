@@ -7,12 +7,12 @@
   </tr>
 </table>
 
-<h1>CoronaAdmin-Free-Admin-Template</h1>
-Corona Admin is a free responsive admin template built with Bootstrap 4. The template has colorful, attractive yet simple and elegant design. The template is well crafted, with all the components neatly and carefully designed and arranged within the template.
+<h1>Se Utiliza la plantilla Free-Admin-Template</h1>
+Corona Admin es una plantilla de administración receptiva gratuita creada con Bootstrap 5. La plantilla tiene un diseño colorido, atractivo pero simple y elegante. La plantilla está bien diseñada, con todos los componentes cuidadosamente diseñados y dispuestos dentro de la plantilla.
 
-Corona Admin is packed with all the features that fit your needs but not cramped with components you would not even use. It is an excellent fit to build admin panels, e-commerce systems, project management systems, CMS or CRM.
+Corona Admin está repleto de todas las funciones que se adaptan a sus necesidades, pero no está repleto de componentes que ni siquiera usaría. Es una opción excelente para crear paneles de administración, sistemas de comercio electrónico, sistemas de gestión de proyectos, CMS o CRM.
 
-Although the template has a design like none other, it is easily customizable to suit your requirements. Corona Admin comes with a clean and well-commented code that makes it easy to work with the template. Thus making it an ideal pick for jump starting your project.
+Aunque la plantilla tiene un diseño como ningún otro, se puede personalizar fácilmente para satisfacer sus necesidades. Corona Admin viene con un código limpio y bien comentado que facilita el trabajo con la plantilla. Por lo tanto, es una elección ideal para impulsar su proyecto.
 
 <h1>Credits:</h1>
 
@@ -34,19 +34,18 @@ Corona Admin is designed to work flawlessly with all the latest and modern web b
 
 <h1>License Information:</h1>
 
-Corona Admin is released under MIT license. Corona Admin is a free Bootstrap 4 admin template developed from BootstrapDash. Feel free to download it, use it, share it, get creative with it.
+Corona Admin se publica bajo licencia MIT. Corona Admin es una plantilla de administración gratuita de Bootstrap 4 desarrollada a partir de BootstrapDash. Siéntase libre de descargarlo, usarlo, compartirlo, ser creativo con él.
+<h1>¿Cómo usar Corona Admin?</h1>
 
-<h1>How to use Corona Admin?</h1>
+1 - Haga clic en el botón Clonar o Descargar en GitHub y descárguelo como un archivo ZIP o puede ingresar el comando git clone https://github.com/BootstrapDash/corona-free-dark-bootstrap-admin-template.git en su terminal para obtener una copia de esta plantilla.
 
-1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone https://github.com/BootstrapDash/corona-free-dark-bootstrap-admin-template.git in you terminal to get a copy of this template.
+2 - Después de descargar los archivos, obtendrá una carpeta con todos los archivos necesarios
 
-2 - After the files have been downloaded you will get a folder with all the required files
+3 - Puede instalar todas las dependencias en la plantilla ejecutando el comando npm install. Todos los archivos requeridos están en los módulos del nodo.
 
-3 - You can install all the dependencies in the template by running the command npm install. All the required files are in the node modules.
+4 - Busque el archivo llamado index.html, verifique todos los componentes que necesita. Abra el archivo en un editor de texto y podrá comenzar a editar.
 
-4 - Find the file named index.html, check what all components you need. Open the file in a text editor and you can start editing.
-
-5 - Now that your project has now kick-started, all you need to do now is to code, code, and code to your heart's content.
+5 - Ahora que su proyecto ha comenzado, todo lo que necesita hacer ahora es codificar, codificar y codificar al contenido de su corazón.
 
 <h1>How to Contribute?:</h1>
 

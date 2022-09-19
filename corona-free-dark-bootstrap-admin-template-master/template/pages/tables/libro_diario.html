@@ -215,7 +215,7 @@
                   </div>
                 </div>
                 <div class="preview-item-content">
-                  <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                 <a class="admin_ms.html"> </a>
                 </div>
               </a>
             </div>
@@ -280,34 +280,37 @@
           <div class="collapse" id="mantenimiento">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="tablas-Clasificacion.html">Clasificacion</a></li>
-              <li class="nav-item"> <a class="nav-link" href="estado-cuentas.html">Estado de cuentas</a></li>
-              <li class="nav-item"> <a class="nav-link" href="estado-sub-cuentas.html">Estado de subcuentas</a></li>
+              <!--<li class="nav-item"> <a class="nav-link" href="estado-cuentas.html">Estado de cuentas</a></li>-->
+            <!--  <li class="nav-item"> <a class="nav-link" href="estado-sub-cuentas.html">Estado de subcuentas</a></li>-->
            <li class="nav-item"> <a class="nav-link" href="estado-periodo.html">Estado de periodo</a></li>
               <li class="nav-item"> <a class="nav-link" href="Objetos.html"> Objetos </a></li>
             </ul>
           </div>
         </li>
         
-      <!-- Seguridad  -->
-        <li class="nav-item menu-items">
-          <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-            <span class="menu-icon">
-              <i class="mdi mdi-security"></i>
-            </span>
-            <span class="menu-title">Seguridad</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="auth">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="Usuarios.html"> Usuarios </a></li>
-              <li class="nav-item"> <a class="nav-link" href="Roles.html">Roles</a></li>
-             <li class="nav-item"> <a class="nav-link" href="Permisos.html"> Permisos </a></li>
-              <li class="nav-item"> <a class="nav-link" href="Bitacora.html">  Bitacoras </a></li>
-              <li class="nav-item"> <a class="nav-link" href="Parametros.html">  Parametros </a></li>
-              <li class="nav-item"> <a class="nav-link" href="admin_ms.html">  Administrador </a></li>
+            <!-- Seguridad  -->
+              <li class="nav-item menu-items">
+                <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                  <span class="menu-icon">
+                    <i class="mdi mdi-security"></i>
+                  </span>
+                  <span class="menu-title">Seguridad</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="auth">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="Usuarios.html"> Usuarios </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Roles.html">Roles</a></li>
+                   <li class="nav-item"> <a class="nav-link" href="Permisos.html"> Permisos </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Bitacora.html">  Bitacoras </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Parametros.html">  Parametros </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Pregunta_Usuario.html">  Preguntas </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="admin_ms.html">  Administrador </a></li>
+                  </ul>
+                </div>
+              </li>  
             </ul>
-          </div>
-        </li>  
+          </nav
       </ul>
     </nav>
 
@@ -342,31 +345,11 @@
                 </div>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                <h6 class="p-3 mb-0">Profile</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-settings text-success"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Settings</p>
-                  </div>
+                <a class="btn btn-info" href="../samples/login.html" class="p-3 mb-0">Cerrar Sesion</a>
+             
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-logout text-danger"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <a  href="index.html" class="preview-subject mb-1">Cerrar Session</a>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <p class="p-3 mb-0 text-center">Advanced settings</p>
+                <a class="p-3 mb-0 text-center" href="admin_ms.html">Administracion</a>
               </div>
             </li>
           </ul>
@@ -644,6 +627,179 @@
 
 
 
+              
+                  <!-- INICIO MODAL PARA INGRESADA  -->
+                  <div class="modal-container">
+                    <div class="modal fade bd-example-modal-lg" id="dialogo5">
+                          <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                     <div class="modal-dialog modal-sm">
+                     <div class="modal-content">
+                          <!-- CABECERA DEL DIALOGO NUEVA-->
+                     <div class="modal-header">
+                     <h4 class="modal-title">Estado de la Sub Cuenta</h4>
+                          <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                     </div>
+                          <!-- CUERPO DEL DIALOGO INGRESADA -->
+                     <div class="modal-body">
+                     <center>
+                     <form action="" method="post">
+                     <label class="form-label">
+                     Esta Sub cuenta ha sido ingresada en el libro diario
+                     <!--<input type='text' name='Clasificacion' class="form-control" required></input>--> 
+                     </label>
+                     <!--<label class="form-label">
+                     Numero de Cuenta
+                     <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
+                     </label>
+                     <label class="form-label">
+                     Nombre de Cuenta
+                     <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+                     </label>
+                     <label class="form-label">
+                     Saldo
+                     <input type='number' name='saldo' class="form-control"  required></input> 
+                     </label>
+                     <label class="form-label">
+                     Fecha
+                     <input type='number' name='fecha' class="form-control"  required></input> 
+                     </label>-->
+         
+                 
+         
+                     <!--<a href="" class="btn btn-secondary">Cancelar</a>
+                     <button type="submit" class="btn btn-primary">Registrar </button>-->
+                     </form>
+                     </div> 
+                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                     </center>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                         <!-- FIN DE MODAL PARA INGRESADA  -->
+         
+         
+         
+                     
+         
+         
+         
+         
+         
+         
+         
+         
+         
+                         
+                           <!-- INICIO MODAL PARA PENDIENTE  -->
+                    <div class="modal-container">
+                     <div class="modal fade bd-example-modal-lg" id="dialogo6">
+                           <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                      <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                           <!-- CABECERA DEL DIALOGO PENDIENTE-->
+                      <div class="modal-header">
+                      <h4 class="modal-title">Estado de la Sub Cuenta</h4>
+                           <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                      </div>
+                       
+                          <!-- CUERPO DEL DIALOGO PENDIENTE -->
+                          <div class="modal-body">
+                           <center>
+                           <form action="" method="post">
+                           <label class="form-label">
+                           Esta Sub cuenta esta pendiente, no ha sido totalizada por el libro Mayor
+                           <!--<input type='text' name='Clasificacion' class="form-control" required></input> -->
+                           </label>
+                           <!--<label class="form-label">
+                           Numero de Cuenta
+                           <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
+                           </label>
+                           <label class="form-label">
+                           Nombre de Cuenta
+                           <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+                           </label>
+                           <label class="form-label">
+                           Saldo
+                           <input type='number' name='saldo' class="form-control"  required></input> 
+                           </label>
+                           <label class="form-label">
+                           Fecha
+                           <input type='number' name='fecha' class="form-control"  required></input> 
+                           </label>-->
+               
+                       
+               
+                           <!--<a href="" class="btn btn-secondary">Cancelar</a>
+                           <button type="submit" class="btn btn-primary">Registrar </button>-->
+                           </form>
+                           </div> 
+                           <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                           </center>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                               <!-- FIN DE MODAL PARA PENDIENTE  -->
+                      
+         
+         
+                     
+         
+         
+         
+                         
+                           <!-- INICIO MODAL PARA PROCESADA  -->
+                           <div class="modal-container">
+                             <div class="modal fade bd-example-modal-lg" id="dialogo7">
+                                   <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                              <div class="modal-dialog modal-sm">
+                              <div class="modal-content">
+                                   <!-- CABECERA DEL DIALOGO PROCESADA-->
+                              <div class="modal-header">
+                              <h4 class="modal-title">Estado de la Sub Cuenta</h4>
+                                   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                              </div>
+                               
+                                  <!-- CUERPO DEL DIALOGO PROCESADA -->
+                                  <div class="modal-body">
+                                   <center>
+                                   <form action="" method="post">
+                                   <label class="form-label">
+                                   Esta Sub cuenta  procesada, ha sido totalizada por el libro Mayor
+                                   <!--<input type='text' name='Clasificacion' class="form-control" required></input>--> 
+                                   </label>
+                                   <!--<label class="form-label">
+                                   Numero de Cuenta
+                                   <input type='text' name='Numero de Cuenta' class="form-control" required></input> 
+                                   </label>
+                                   <label class="form-label">
+                                   Nombre de Cuenta
+                                   <input type='number' name='Nombre de Cuenta' class="form-control"  required></input> 
+                                   </label>
+                                   <label class="form-label">
+                                   Saldo
+                                   <input type='number' name='saldo' class="form-control"  required></input> 
+                                   </label>
+                                   <label class="form-label">
+                                   Fecha
+                                   <input type='number' name='fecha' class="form-control"  required></input> 
+                                   </label>-->
+                       
+                               
+                       
+                                   <!--<a href="" class="btn btn-secondary">Cancelar</a>
+                                   <button type="submit" class="btn btn-primary">Registrar </button>-->
+                                   </form>
+                                   </div> 
+                                   <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                   </center>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                       <!-- FIN DE MODAL PARA PROCESADA  -->
+
 
 
 
@@ -737,6 +893,7 @@
                             <th class="text-dark bg-white"> Saldo Haber </th>
                             <th class="text-dark bg-white"> Comprobantes </th>
                             <th class="text-dark bg-white"> Fecha </th>
+                            <th class="text-dark bg-white"> Estado Sub Cuenta </th>
                             <th class="text-dark bg-white"> Acciones </th>
                             
 
@@ -753,6 +910,7 @@
                             <td> 2500.00 </td>
                             <td> <a href="" data-toggle="modal" data-target="#comprobante">   image1651861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo5">Ingresada</button>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
@@ -763,6 +921,7 @@
                             <td> 2500.00 </td>
                             <td> <a href="" data-toggle="modal" data-target="#comprobante">   image1651861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo5">Ingresada</button>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
@@ -773,6 +932,7 @@
                             <td>  </td>
                             <td> <a href="" data-toggle="modal" data-target="#comprobante">   image1651861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="#dialogo6">Pendiente</button>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
@@ -783,6 +943,7 @@
                             <td>  </td>
                             <td> <a href="" data-toggle="modal" data-target="#comprobante">   image1651861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-warning"  data-toggle="modal" data-target="#dialogo6">Pendiente</button>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
@@ -793,12 +954,11 @@
                             <td> 9000.00 </td>
                             <td> <a href="" data-toggle="modal" data-target="#comprobante">   image1651861487718.jpeg  </a> </td>
                             <td> May 15, 2022 </td>
+                            <td><button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo7">Procesada</button></td>
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                         </tbody>
                       </table>
-
-                      
                     </div>
                   </div>
                 </div>

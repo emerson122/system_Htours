@@ -71,7 +71,7 @@
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                     <a class="admin_ms.html"> </a>
                     </div>
                   </a>
                 </div>
@@ -144,28 +144,48 @@
               </div>
             </li>
             
-          <!-- Seguridad  -->
-            <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                <span class="menu-icon">
-                  <i class="mdi mdi-security"></i>
-                </span>
-                <span class="menu-title">Seguridad</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="Usuarios.html"> Usuarios </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="Roles.html">Roles</a></li>
-                 <li class="nav-item"> <a class="nav-link" href="Permisos.html"> Permisos </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="Bitacora.html">  Bitacoras </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="Parametros.html">  Parametros </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="admin_ms.html">  Administrador </a></li>
-                </ul>
-              </div>
-            </li>  
-          </ul>
-        </nav>
+                    <!-- Seguridad  -->
+              <li class="nav-item menu-items">
+                <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                  <span class="menu-icon">
+                    <i class="mdi mdi-security"></i>
+                  </span>
+                  <span class="menu-title">Seguridad</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="auth">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="Usuarios.html"> Usuarios </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Roles.html">Roles</a></li>
+                   <li class="nav-item"> <a class="nav-link" href="Permisos.html"> Permisos </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Bitacora.html">  Bitacoras </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Parametros.html">  Parametros </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Pregunta_Usuario.html">  Preguntas </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="admin_ms.html">  Administrador </a></li>
+                  </ul>
+                </div>
+              </li>  
+            </ul>
+          </nav>
+           <!-- mantenimiento -->
+           <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#mantenimiento" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title"> </span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="mantenimiento">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="tablas-Clasificacion.html">Clasificacion</a></li>
+                <!--<li class="nav-item"> <a class="nav-link" href="estado-cuentas.html">Estado de cuentas</a></li>-->
+                <!--<li class="nav-item"> <a class="nav-link" href="estado-sub-cuentas.html">Estado de subcuentas</a></li>-->
+             <li class="nav-item"> <a class="nav-link" href="estado-periodo.html">Estado de periodo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="login"> Cerrar Sesion </a></li>
+              </ul>
+            </div>
+          </li>
     
         <!-- inicio de menu  -->
         <!-- partial -->
@@ -207,7 +227,7 @@
                         </div>
                       </div>
                       <div class="preview-item-content">
-                        <p class="preview-subject mb-1">Settings</p>
+                        
                       </div>
                     </a>
                     <div class="dropdown-divider"></div>
@@ -243,9 +263,9 @@
             </nav>
             <p align="right" valign="baseline">
               <button type="button"  class="btn btn-success"  data-toggle="modal" data-target="#dialogo1">(+) Nuevo</button>
+              <button type="button"  class="btn btn-success"  >Generar PDF</button>
             </p>
             <div class="row">
-          
               <div class="col-lg-12 stretch-card">
                 <div class="card">
                   <div class="card-body">
@@ -268,7 +288,7 @@
                         </thead>
                         <tbody>
                           <tr class="text-white bg-dark">
-                            <td> 1</td>
+                            <td> 1 <input type="checkbox" name="" id=""></td>
                             <td>Periodo-2020-ene-1-001</td>
                             <td>01/01/2020</td>
                             <td>01/12/2020</td>
@@ -276,7 +296,7 @@
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>  
                           </tr>
                           <tr class="text-white bg-dark">
-                            <td> 2 </td>
+                            <td> 2 <input type="checkbox" name="" id=""></td>
                             <td>Periodo-2021-ene-1-002</td>
                             <td>01/01/2021</td>
                             <td>01/12/2021</td>
@@ -284,7 +304,7 @@
                             <td><button type="button"  class="btn btn-info"  data-toggle="modal" data-target="#dialogo2">Editar</button> <button type="button"  class="btn btn-danger"  data-toggle="modal" data-target="#dialogo3">Eliminar</button> </td>
                           </tr>
                           <tr class="text-white bg-dark">
-                            <td> 3 </td>
+                            <td> 3 <input type="checkbox" name="" id=""> </td>
                             <td>Periodo-2022-ene-1-003</td>
                             <td>01/01/2022</td>
                             <td>01/12/2022</td>
@@ -380,11 +400,11 @@
                         <br>
                         <label class="form-label">
                           Fecha inicial
-                          <input type='date' name='fec-inic' class="form-control" required></input>
+                          <input type="date" value="2021-01-01" readonly>
                         </label>
                         <label class="form-label">
                           Fecha final
-                          <input type='date' name='fec-hast' class="form-control" required></input>
+                          <input type="date" value="2021-12-31" readonly>
                         </label>
                         <br>
                         <div class="custom-control custom-switch">
@@ -439,11 +459,7 @@
              </div>
              </div>
              </div>
-                 <!-- FIN DE MODAL PARA BORRAR  -->
-
-
-
-     
+                 <!-- FIN DE MODAL PARA BORRAR  --> 
               </div>
             </div>
           </div>
