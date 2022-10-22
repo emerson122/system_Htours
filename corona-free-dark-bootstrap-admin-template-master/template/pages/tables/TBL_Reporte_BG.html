@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Reporte Balance General</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+        <!-- inicio de todo el menu -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+            <a class="sidebar-brand brand-logo" href="../../index.html"><H3><font color="white"> System H Tours</font></H3></a>
+            <a class="sidebar-brand brand-logo-mini" href="../../index.html"><H3><font color="white">SHT</font></H3></a>
+          </div>
+          <ul class="nav">
+            <li class="nav-item profile">
+              <div class="profile-desc">
+                <div class="profile-pic">
+                  <div class="count-indicator">
+                    <img class="img-xs rounded-circle " src="../../assets/images/faces/usuario1.png" alt="">
+                    <span class="count bg-success"></span>
+                  </div>
+                  <div class="profile-name">
+                    <h5 class="mb-0 font-weight-normal">Usuario1</h5>
+                    <span>Administrador</span>
+                  </div>
+                </div>
+                <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+                <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                  <a href="#" class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-primary"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-onepassword  text-info"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar-today text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                     <a class="admin_ms.html"> </a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">Navegacion</span>
+            </li>
+            <li class="nav-item menu-items">
+              <a class="nav-link" href="../../index.html">
+                <span class="menu-icon">
+                  <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Home</span>
+              </a>
+            </li>
+            <!-- cuentas -->
+            <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-icon">
+                  <i class="mdi mdi-laptop"></i>
+                </span>
+                <span class="menu-title">Cuentas</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="tablas-crear.cuenta.html">Crear Cuentas</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="tablas-subcuentas.html">Crear Subcuentas</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="libro_diario.html">Libro Diario</a></li>
+                  </ul>
+              </div>
+            </li>
+            <!-- periodo  -->
+            <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#periodo-contable" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-icon">
+                  <i class="mdi mdi-table-large"></i>
+                </span>
+                <span class="menu-title">Periodo</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="periodo-contable">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="tablas-periodo.html">Periodo/Libro Mayor</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="Balance-GL.html">Balance General</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="Consultas-estadoDeResultados.html">Estado de Resultado</a></li>
+                  </ul>
+              </div>
+            </li>
+    
+            <!-- mantenimiento -->
+            <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#mantenimiento" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-icon">
+                  <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Manteniminento</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="mantenimiento">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="tablas-Clasificacion.html">Clasificacion</a></li>
+                 <!--<li class="nav-item"> <a class="nav-link" href="estado-cuentas.html">Estado de cuentas</a></li>-->
+                 <!-- <li class="nav-item"> <a class="nav-link" href="estado-sub-cuentas.html">Estado de subcuentas</a></li>-->
+               <li class="nav-item"> <a class="nav-link" href="estado-periodo.html">Estado de periodo</a></li>
+                </ul>
+              </div>
+            </li>
+            
+          
+           <!-- Seguridad  -->
+           <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">Seguridad</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="Usuarios.html"> Usuarios </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Roles</a></li>
+               <li class="nav-item"> <a class="nav-link" href="Permisos.html"> Permisos </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> bitacoras </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registrar usuario </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/admin_ms.html">  Administrador </a></li>
+              </ul>
+            </div>
+          </li>
+
+            <!-- Menu Modulos Reportes editable -->
+            <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#Reportes" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-icon">
+                 <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Reportes</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="Reportes">
+                <ul class="nav flex-column sub-menu">
+                 <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_LM.html">Reporte Libro Mayor</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="TBL_Reportes_ER.html">Reporte Estado de Resultado</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="TBL_Reporte_BG.html">Reporte Balance General</a></li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
+    
+        <!-- inicio de menu  -->
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+          <!-- partial:../../partials/_navbar.html -->
+          <nav class="navbar p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+              <a class="navbar-brand brand-logo-mini" href="../../index.html"><H3><font color="white">SHT</font></H3></a>
+            </div>
+            <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+              <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                <span class="mdi mdi-menu"></span>
+              </button>
+              <!-- <ul class="navbar-nav w-100">
+                <li class="nav-item w-100">
+                  <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                    <input type="text" class="form-control" placeholder="Search products">
+                  </form>
+                </li> -->
+              </ul>
+              <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item dropdown d-none d-lg-block">
+                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+                    <h6 class="p-3 mb-0">Projects</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-file-outline text-primary"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Software Development</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-web text-info"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">UI Development</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-layers text-danger"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Software Testing</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">See all projects</p>
+                  </div>
+                </li>
+                <li class="nav-item nav-settings d-none d-lg-block">
+                  <a class="nav-link" href="#">
+                    <i class="mdi mdi-view-grid"></i>
+                  </a>
+                </li>
+                <li class="nav-item dropdown border-left">
+                  <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                    <i class="mdi mdi-email"></i>
+                    <span class="count bg-success"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                    <h6 class="p-3 mb-0">Messages</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="../../assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
+                        <p class="text-muted mb-0"> 1 Minutes ago </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="../../assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                        <p class="text-muted mb-0"> 15 Minutes ago </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="../../assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                        <p class="text-muted mb-0"> 18 Minutes ago </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">4 new messages</p>
+                  </div>
+                </li>
+                <li class="nav-item dropdown border-left">
+                  <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                    <i class="mdi mdi-bell"></i>
+                    <span class="count bg-danger"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                    <h6 class="p-3 mb-0">Notifications</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-calendar text-success"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Event today</p>
+                        <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-settings text-danger"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <a class="admin_ms.html"> </a>
+                        <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-link-variant text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Launch Admin</p>
+                        <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">See all notifications</p>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                    <div class="navbar-profile">
+                      <img class="img-xs rounded-circle" src="../../assets/images/faces/usuario1.png" alt="">
+                      <p class="mb-0 d-none d-sm-block navbar-profile-name">Usuario1</p>
+                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                    <h6 class="p-3 mb-0">Profile</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-settings text-success"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <a class="admin_ms.html"> </a>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-logout text-danger"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <a  href="index.html" class="preview-subject mb-1">Cerrar Session</a>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">Advanced settings</p>
+                  </div>
+                </li>
+              </ul>
+              <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                <span class="mdi mdi-format-line-spacing"></span>
+              </button>
+            </div>
+          </nav>
+          <!-- fin de menu -->
+
+ <!-- INICIO MODAL PARA NUEVA  REPORTE ER -->
+ <div class="modal-container">
+  <div class="modal fade bd-example-modal-lg" id="dialogo1">
+        <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+   <div class="modal-dialog modal-md">
+   <div class="modal-content">
+        <!-- CABECERA DEL DIALOGO NUEVA-->
+   <div class="modal-header">
+   <h4 class="modal-title"> <center> Generar un Nuevo Reporte</center></h4>
+   <button align="right" type="button" class="btn btn-danger" data-dismiss="modal">X</button>     
+   <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+   </div>
+        <!-- CUERPO DEL DIALOGO NUEVA -->
+   <div class="modal-body">
+   <center>
+   <form action="" method="post">
+    <label class="form-label">
+      Ingrese el Nombre: <input type='text' name='namereportlm' class="form-control bg-white" required></input>
+    </label>
+    <br><br>
+    <label class="form-label">
+      Detalle de generar reporte:
+      <input type='text' name='namereportlm' class="form-control bg-white" required></input>
+    </label>
+    <br><br>
+    <p>
+    <label class="form-label">
+      Desde:
+      <input type='date' name='fec-inic' class="form-control" required></input>
+    </label>
+    
+    <label class="form-label">
+      Hasta:
+      <input type='date' name='fec-inic' class="form-control" required></input>
+    </label></p>
+    <br>
+   <a href="" class="btn btn-danger">Cancelar</a>
+   <button type="submit" class="btn btn-success">Aceptar</button>
+   </form>
+   </div> 
+   
+   </center>
+   </div>
+   </div>
+   </div>
+   </div>
+       <!-- FIN DE MODAL PARA NUEVA  -->
+
+        
+        <!-- CODIGO INTERFAZ REPORTES ER -->
+        <div class="main-panel" >     
+          
+          <div class="content-wrapper" class="panel panel-default" style="background-color:rgba(4, 109, 69, 0.918);">
+            <div class="panel-body" >
+              <center> <h1>Reporte Balance General</h1> </center>
+            </div>
+          </div>
+          <div class="content-wrapper" style="background-color:rgb(2, 59, 55);">
+            <!-- CODIGO DE LOS GRUPOS DE SELECCION EN TABLAS-->
+                    
+        <table align="center"> <!-- TABLA PRINCIPAL -->
+          <tr>
+          <td>
+            <!-- TABLA SECUNDARIA 1 COLUMNA -->
+            <table cellspacing="70" cellpadding="10" border="3" bordercolor="065E3B" rules="none" bgcolor="057A4C">
+              <tr>
+                <td align="center">
+                  <center>
+                   <h3>Fecha Desde:</h3>
+                  </center>
+                </td>
+                <td>
+                  <center>        
+                      <label class="form-label">
+                      <input type='date' name='fec-inic' class="form-control" required></input>
+                      </label>
+                   </center>
+                </td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <center><h3>Feha Hasta:</h3>
+                  </center>         
+                </td>
+              <td>
+                <center>       
+                  <label class="form-label">
+                  <input type='date' name='fec-inic' class="form-control" required></input>
+                  </label>
+                 </center>
+              </td>
+              </tr>
+            </table>
+          </td>
+          <!-- ESPACIO DE TABLAS -->
+          <td width="13%"></td>
+          <!-- TERCERA TABLA 2 COLUMNA -->
+          <td>
+            <table  table-responsive border="3" cellspacing="70" cellpadding="10" bordercolor="065E3B" rules="none" bgcolor="057A4C">
+              <tr>
+                <td>
+                  <center>
+                    <br>
+                    <h3>Nombre del Reporte:</h3>
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center>
+                    <form action="../../form-result.php" method="post" target="_blank">
+                      <input type="search" name="busquedamodelos" list="listamodelos">
+                      <input type="submit" value="Buscar">
+                  </form> 
+                  <datalist id="listamodelos">
+                  
+                    <option value="Balance_General">
+                  
+                    <option value="Cuentas_del_Balance_General">
+                  
+                    <option value="Cuenta_Especifica">
+                  
+                  </datalist>
+                  </center>         
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        </table>
+
+      <table align="center" table-responsive cellspacing="15" cellpadding="15">
+        <tr><td></td>
+          <td></td>
+          <td ></td>
+          <td ></td>
+          <td ></td>
+          <td ></td>
+        </tr>
+        <tr> 
+          <td>
+            <p align="left" valign="baseline">            
+             <a type="button"  class="btn btn-outline-primary" href="javascript:window.print();">📑 Generar PDF</a>
+            </p>
+          </td>
+          <td ></td>
+          <td ></td>
+          <td>
+            <p align="center" valign="baseline">
+              <button type="button"  class="btn btn-outline-success"  data-toggle="modal" data-target="#dialogo1"><div class="spinner-grow spinner-grow-sm"></div>  Nuevo</button>
+            </p>
+          </td>
+          <td ></td>
+          <td ></td>
+          <td>
+            <p align="right" valign="baseline">
+             <button type="button"  class="btn btn-outline-info"  data-toggle="modal" data-target="#dialogo11" ><div class="spinner-grow spinner-grow-sm"></div>   Previsualizar</button>
+            </p>
+          </td>
+        </tr>
+      </table>
+        <!-- FIN TABLA PRINCIPAL --> 
+          
+          <!-- MUESTRA LAS TABLAS Y LA INFORMACION -->        
+           <div class="row">
+          
+            <div class="col-lg-12 stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title"> <center>Reportes realizados</center></h4>
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered table-contextual table-dark table-striped table-sm">
+                      <thead>
+                        <tr>
+                          
+                          <th class="text-dark bg-white">N°</th>
+                          <th class="text-dark bg-white"> Nombre del Reporte</th>
+                          <th class="text-dark bg-white"> Fecha de Registro</th>
+                          <th class="text-dark bg-white"> Acciones  </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr> <!-- class="text-white bg-dark" --> 
+                          <td> 1</td>
+                          <td>Reporte_Balance General</td>
+                          <td>08 Agosto 2022</td>
+                          <td align="center">
+                            <button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo2">Editar Nombre</button></td>  
+                        </tr>
+                        <tr><!-- class="text-white bg-dark" -->
+                          <td> 2 </td>
+                          <td>ReporteBG_Cuentas del Balance G.</td>
+                          <td>08 Agosto 2022</td>
+                          <td align="center">
+                            <button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo2">Editar Nombre</button></td>
+                        </tr>
+                        <tr>
+                          <td> 3 </td>
+                          <td>ReporteBG_Cuenta Especifica</td>
+                          <td>08 Agosto 2022</td>
+                          <td align="center">
+                            <button type="button"  class="btn btn-primary"  data-toggle="modal" data-target="#dialogo2">Editar Nombre</button></td>
+                        </tr>                       
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>  
+               <!-- INICIO MODAL PARA PREVISUALIZAR  -->
+               <div class="modal-container">
+                <div class="modal fade bd-example-modal-lg" id="dialogo11">
+                  <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                  <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                      <!-- CABECERA DEL DIALOGO PREVISUALIZAR-->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Previsualización de Reporte</h4>
+                        <button align="right" type="button" class="btn btn-danger" data-dismiss="modal">X</button>
+                        <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                      </div>
+                      <!-- CUERPO DEL DIALOGO PREVISUALIZAR -->
+                      <div class="modal-body">
+                        <center>
+                          <form action="" method="post">
+                            <img class="img" width="400" height="300"  src="../../assets/images/BG.jpg" alt="">
+                            <br>
+                            <br>
+                            <a href="" class="btn btn-danger">Cerrar Vista</a>
+                            <button type="submit" class="btn btn-primary">Repotorte Anterior</button>
+                          </form>
+                      </div>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FIN DE MODAL PARA PREVISUALIZAR  -->
+              <!-- INICIO MODAL PARA EDITAR  -->
+              <div class="modal-container">
+                <div class="modal fade bd-example-modal-lg" id="dialogo2">
+                      <!-- COLOCARLE UN lg PARA TAMANO MEDIANO COLOCARLE UN sm PARA TAMANO PEQUENO -->
+                 <div class="modal-dialog modal-md">
+                 <div class="modal-content">
+                      <!-- CABECERA DEL DIALOGO EDITAR -->
+                 <div class="modal-header">
+                 <h4 class="modal-title">Editar Nombre de Reporte</h4>
+                 <button align="right" type="button" class="btn btn-danger" data-dismiss="modal">X</button>
+                      <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+                 </div>
+                      <!-- CUERPO DEL DIALOGO EDITAR -->
+                 <div class="modal-body">
+                   <center>
+                     <Label>Selecione el reporte:</Label>
+                     <br>
+                     <form action="" method="post">
+                     <select name="" id="">
+                      <option value="" selected></option>
+                      <option value="">ReporteBG_Balance_General</option>
+                      <option value="">ReporteBG_Cuenta_del_Balance_G</option>
+                      <option value="">ReporteBG_Cuenta_Especifica</option>
+                      </select>
+                      <br>
+                      <br>
+                      <label class="form-label">
+                       Ingrese el Nuevo Nombre:
+                       <input type='text' name='namereportlm' class="form-control bg-white" required></input>
+                     </label>
+                     <br>
+                     <br>
+                     <a href="" class="btn btn-danger">Cancelar</a>
+                     <button type="submit" class="btn btn-success">Aceptar</button>
+                     </form>
+                     </div> 
+                   </center>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                     <!-- FIN DE MODAL PARA EDITAR  -->   
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block"></span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+          </div>
+        </footer>
+        <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  </body>
+</html>
